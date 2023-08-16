@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {}
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
         "projectName": "Cinema.Core",
-        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\obj\\",
         "projectStyle": "PackageReference",
@@ -81,12 +81,12 @@
         }
       }
     },
-    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
         "projectName": "Cinema.DataAccess",
-        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
@@ -105,11 +105,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
-                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj"
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj"
               },
-              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj": {
-                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj"
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj"
               }
             }
           }
@@ -165,12 +165,12 @@
         }
       }
     },
-    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj": {
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj",
         "projectName": "Cinema.Entities",
-        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\obj\\",
         "projectStyle": "PackageReference",
@@ -189,8 +189,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
-                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj"
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj"
               }
             }
           }
@@ -224,6 +224,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             }
           },
           "imports": [

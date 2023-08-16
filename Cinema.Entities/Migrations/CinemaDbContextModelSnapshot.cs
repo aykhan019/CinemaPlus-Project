@@ -28,36 +28,14 @@ namespace Cinema.Entities.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TheatreId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Halls");
-                });
-
-            modelBuilder.Entity("Cinema.Entities.Models.HallImage", b =>
-                {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("HallId")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("ImageUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("HallId");
-
-                    b.ToTable("HallImages");
                 });
 
             modelBuilder.Entity("Cinema.Entities.Models.Language", b =>
@@ -66,14 +44,17 @@ namespace Cinema.Entities.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("FlagUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("MovieId")
+                        .HasColumnType("nvarchar(450)");
+
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MovieId");
 
                     b.ToTable("Languages");
                 });
@@ -101,14 +82,14 @@ namespace Cinema.Entities.Migrations
                     b.Property<string>("ImdbRating")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("OriginalLanguage")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Plot")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PosterUrl")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Price")
+                        .HasColumnType("int");
 
                     b.Property<string>("ProducerCountry")
                         .HasColumnType("nvarchar(max)");
@@ -142,19 +123,22 @@ namespace Cinema.Entities.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("HallId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<bool>("IsAvailable")
                         .HasColumnType("bit");
 
                     b.Property<string>("Number")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SessionId")
+                        .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("HallId");
+
+                    b.HasIndex("SessionId");
 
                     b.ToTable("Seats");
                 });
@@ -165,11 +149,9 @@ namespace Cinema.Entities.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("HallId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("MovieId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<DateTime>("StartTime")
@@ -190,11 +172,9 @@ namespace Cinema.Entities.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("MovieId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -210,19 +190,18 @@ namespace Cinema.Entities.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Location")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
-                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -230,16 +209,45 @@ namespace Cinema.Entities.Migrations
                     b.ToTable("Theatres");
                 });
 
+            modelBuilder.Entity("Cinema.Entities.Models.TheatreImage", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TheatreId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TheatreId");
+
+                    b.ToTable("TheatreImages");
+                });
+
             modelBuilder.Entity("Cinema.Entities.Models.Ticket", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("CardNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Payment")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("PurchaseDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("SessionId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
@@ -249,41 +257,37 @@ namespace Cinema.Entities.Migrations
                     b.ToTable("Tickets");
                 });
 
-            modelBuilder.Entity("Cinema.Entities.Models.HallImage", b =>
+            modelBuilder.Entity("Cinema.Entities.Models.Language", b =>
                 {
-                    b.HasOne("Cinema.Entities.Models.Hall", "Hall")
-                        .WithMany("HallImages")
-                        .HasForeignKey("HallId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Cinema.Entities.Models.Movie", "Movie")
+                        .WithMany("Languages")
+                        .HasForeignKey("MovieId");
 
-                    b.Navigation("Hall");
+                    b.Navigation("Movie");
                 });
 
             modelBuilder.Entity("Cinema.Entities.Models.Seat", b =>
                 {
-                    b.HasOne("Cinema.Entities.Models.Hall", "Hall")
+                    b.HasOne("Cinema.Entities.Models.Hall", null)
                         .WithMany("Seats")
-                        .HasForeignKey("HallId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("HallId");
 
-                    b.Navigation("Hall");
+                    b.HasOne("Cinema.Entities.Models.Session", "Session")
+                        .WithMany()
+                        .HasForeignKey("SessionId");
+
+                    b.Navigation("Session");
                 });
 
             modelBuilder.Entity("Cinema.Entities.Models.Session", b =>
                 {
                     b.HasOne("Cinema.Entities.Models.Hall", "Hall")
                         .WithMany()
-                        .HasForeignKey("HallId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("HallId");
 
                     b.HasOne("Cinema.Entities.Models.Movie", "Movie")
                         .WithMany()
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MovieId");
 
                     b.Navigation("Hall");
 
@@ -294,39 +298,49 @@ namespace Cinema.Entities.Migrations
                 {
                     b.HasOne("Cinema.Entities.Models.Movie", "Movie")
                         .WithMany("Subtitles")
-                        .HasForeignKey("MovieId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("MovieId");
 
                     b.Navigation("Movie");
+                });
+
+            modelBuilder.Entity("Cinema.Entities.Models.TheatreImage", b =>
+                {
+                    b.HasOne("Cinema.Entities.Models.Theatre", "Theatre")
+                        .WithMany("TheatreImages")
+                        .HasForeignKey("TheatreId");
+
+                    b.Navigation("Theatre");
                 });
 
             modelBuilder.Entity("Cinema.Entities.Models.Ticket", b =>
                 {
                     b.HasOne("Cinema.Entities.Models.Session", "Session")
                         .WithMany("Tickets")
-                        .HasForeignKey("SessionId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("SessionId");
 
                     b.Navigation("Session");
                 });
 
             modelBuilder.Entity("Cinema.Entities.Models.Hall", b =>
                 {
-                    b.Navigation("HallImages");
-
                     b.Navigation("Seats");
                 });
 
             modelBuilder.Entity("Cinema.Entities.Models.Movie", b =>
                 {
+                    b.Navigation("Languages");
+
                     b.Navigation("Subtitles");
                 });
 
             modelBuilder.Entity("Cinema.Entities.Models.Session", b =>
                 {
                     b.Navigation("Tickets");
+                });
+
+            modelBuilder.Entity("Cinema.Entities.Models.Theatre", b =>
+                {
+                    b.Navigation("TheatreImages");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {}
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
         "projectName": "Cinema.Core",
-        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\obj\\",
         "projectStyle": "PackageReference",

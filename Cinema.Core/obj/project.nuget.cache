@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "O7PfmPYthefl6pvXXUzlPPNRz/6gsn/VthB7lqacPU2WiZ6Yf/uxngCsvuoq3nezgspj48y5w4zMjb/KzsHBYg==",
+  "dgSpecHash": "Oz3g0rzRTrP8yElD4IB7lKR6xPy2WsJw6i2gpDKgDdqENxzkJv0ulP8suoloxVyEpODH0oGdvWnaFfCEhdqXPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
+  "projectFilePath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ayxan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ayxan\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
