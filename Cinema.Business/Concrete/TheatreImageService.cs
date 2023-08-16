@@ -9,36 +9,36 @@ using System.Threading.Tasks;
 
 namespace Cinema.Business.Concrete
 {
-    public class HallImageService : IExtendedHallImageService
+    public class TheatreImageService : IExtendedTheatreImageService
     {
-        private readonly EFHallImageDal _hallImageDal;
+        private readonly EFTheatreImageDal _hallImageDal;
 
-        public HallImageService(EFHallImageDal hallImageDal)
+        public TheatreImageService(EFTheatreImageDal hallImageDal)
         {
             _hallImageDal = hallImageDal;
         }
 
-        public void Add(HallImage entity)
+        public void Add(TheatreImage entity)
         {
             _hallImageDal.Add(entity);
         }
 
-        public void Delete(HallImage entity)
+        public void Delete(TheatreImage entity)
         {
             _hallImageDal.Delete(entity);
         }
 
-        public List<HallImage> GetAll()
+        public List<TheatreImage> GetAll()
         {
             return _hallImageDal.GetList();
         }
 
-        public HallImage GetById(string id)
+        public TheatreImage GetById(string id)
         {
             return _hallImageDal.Get(h => h.Id == id);
         }
 
-        public void Update(HallImage entity)
+        public void Update(TheatreImage entity)
         {
            _hallImageDal.Update(entity);
         }

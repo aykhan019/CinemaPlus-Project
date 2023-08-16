@@ -1,22 +1,35 @@
 ﻿using Cinema.Core.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Entities.Models
 {
-    public class Seat:IEntity
+    /// <summary>
+    /// Represents a seat in a cinema hall.
+    /// </summary>
+    public class Seat : IEntity
     {
-        public string Id { get; set; }
+        /// <summary>
+        /// Gets or sets the ID of the seat.
+        /// </summary>
+        public string? Id { get; set; }
 
-        public string Number { get; set; }
+        /// <summary>
+        /// Gets or sets the seat number.
+        /// </summary>
+        public string? Number { get; set; }
 
+        /// <summary>
+        /// Gets or sets a value indicating whether the seat is available.
+        /// </summary>
         public bool IsAvailable { get; set; }
 
-        public string HallId { get; set; }
+        /// <summary>
+        /// Gets or sets the ID of the session associated with the seat.
+        /// </summary>
+        public string? SessionId { get; set; }
 
-        public virtual Hall? Hall { get; set; }
+        /// <summary>
+        /// Gets or sets the session associated with the seat.
+        /// </summary>
+        public virtual Session? Session { get; set; }
     }
 }

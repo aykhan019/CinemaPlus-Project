@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Cinema.DataAccess.Abstract
 {
-    internal interface IHallImageDal:IEntityRepository<HallImage>
+    public interface ITheatreImageDal:IEntityRepository<TheatreImage>
     {
     }
 }

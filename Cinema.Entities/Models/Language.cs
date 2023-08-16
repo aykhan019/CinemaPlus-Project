@@ -1,18 +1,35 @@
 ﻿using Cinema.Core.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Entities.Models
 {
-    public class Language:IEntity
+    /// <summary>
+    /// Represents a language used for movies.
+    /// </summary>
+    public class Language : IEntity
     {
-        public string Id { get; set; }
+        /// <summary>
+        /// Gets or sets the ID of the language.
+        /// </summary>
+        public string? Id { get; set; }
 
-        public string Name { get; set; }
+        /// <summary>
+        /// Gets or sets the name of the language.
+        /// </summary>
+        public string? Name { get; set; }
 
-        public string FlagUrl { get; set; }
+        /// <summary>
+        /// Gets or sets the URL of the flag associated with the language.
+        /// </summary>
+        public string? FlagUrl { get; set; }
+
+        /// <summary>
+        /// Gets or sets the ID of the movie associated with the language.
+        /// </summary>
+        public string? MovieId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the movie associated with the language.
+        /// </summary>
+        public virtual Movie? Movie { get; set; }
     }
 }

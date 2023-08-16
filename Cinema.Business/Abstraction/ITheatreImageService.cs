@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cinema.Business.Abstraction
 {
-    public interface IHallImageService:IService<HallImage>
+    public interface ITheatreImageService : IService<TheatreImage>
     {
     }
 }

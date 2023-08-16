@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Cinema.DataAccess.Concrete.EFEntityFramework
 {
-    public class EFHallImageDal:EfEntityRepositoryBase<HallImage,CinemaDbContext>,IHallImageDal
+    public class EFTheatreImageDal:EfEntityRepositoryBase<TheatreImage, CinemaDbContext>, ITheatreImageDal
     {
     }
 }
