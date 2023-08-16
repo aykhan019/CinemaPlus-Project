@@ -779,6 +779,67 @@
             "rid": "win"
           }
         }
+      },
+      "Cinema.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Cinema.DataAccess": "1.0.0",
+          "Cinema.Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinema.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinema.Business.dll": {}
+        }
+      },
+      "Cinema.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinema.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinema.Core.dll": {}
+        }
+      },
+      "Cinema.DataAccess/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Cinema.Core": "1.0.0",
+          "Cinema.Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinema.DataAccess.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinema.DataAccess.dll": {}
+        }
+      },
+      "Cinema.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Cinema.Core": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Cinema.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Cinema.Entities.dll": {}
+        }
       }
     }
   },
@@ -1998,10 +2059,31 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Cinema.Business/1.0.0": {
+      "type": "project",
+      "path": "../Cinema.Business/Cinema.Business.csproj",
+      "msbuildProject": "../Cinema.Business/Cinema.Business.csproj"
+    },
+    "Cinema.Core/1.0.0": {
+      "type": "project",
+      "path": "../Cinema.Core/Cinema.Core.csproj",
+      "msbuildProject": "../Cinema.Core/Cinema.Core.csproj"
+    },
+    "Cinema.DataAccess/1.0.0": {
+      "type": "project",
+      "path": "../Cinema.DataAccess/Cinema.DataAccess.csproj",
+      "msbuildProject": "../Cinema.DataAccess/Cinema.DataAccess.csproj"
+    },
+    "Cinema.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Cinema.Entities/Cinema.Entities.csproj",
+      "msbuildProject": "../Cinema.Entities/Cinema.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Cinema.Business >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.0",
@@ -2034,7 +2116,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Business\\Cinema.Business.csproj": {
+              "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Business\\Cinema.Business.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

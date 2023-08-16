@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cinema.Business.Abstraction.Extensions
 {
-    public interface IExtendedSubtitleService:ISubtitleService
+    public interface IExtendedSubtitleService : ISubtitleService
     {
     }
 }
