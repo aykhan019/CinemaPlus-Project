@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Cinema.Business.Abstraction.Extensions
 {
-    public interface IExtendedSessionService:ISessionService
+    public interface IExtendedSessionService : ISessionService
     {
     }
 }

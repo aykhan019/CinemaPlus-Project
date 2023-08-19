@@ -12,3 +12,17 @@ C:\Users\eliah\source\repos\CinemaPlus\Cinema.Core\obj\Debug\net6.0\refint\Cinem
 C:\Users\eliah\source\repos\CinemaPlus\Cinema.Core\obj\Debug\net6.0\Cinema.Core.pdb
 C:\Users\eliah\source\repos\CinemaPlus\Cinema.Core\obj\Debug\net6.0\Cinema.Core.genruntimeconfig.cache
 C:\Users\eliah\source\repos\CinemaPlus\Cinema.Core\obj\Debug\net6.0\ref\Cinema.Core.dll
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\bin\Debug\net6.0\Cinema.Core.deps.json
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\bin\Debug\net6.0\Cinema.Core.runtimeconfig.json
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\bin\Debug\net6.0\Cinema.Core.dll
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\bin\Debug\net6.0\Cinema.Core.pdb
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\Cinema.Core.csproj.AssemblyReference.cache
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\Cinema.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\Cinema.Core.AssemblyInfoInputs.cache
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\Cinema.Core.AssemblyInfo.cs
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\Cinema.Core.csproj.CoreCompileInputs.cache
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\Cinema.Core.dll
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\refint\Cinema.Core.dll
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\Cinema.Core.pdb
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\Cinema.Core.genruntimeconfig.cache
+C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject\Cinema.Core\obj\Debug\net6.0\ref\Cinema.Core.dll

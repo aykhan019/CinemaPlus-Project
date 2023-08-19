@@ -1,20 +1,45 @@
 ﻿using Cinema.Core.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Entities.Models
 {
-    public class Session:IEntity
+    /// <summary>
+    /// Represents a movie session in a cinema hall.
+    /// </summary>
+    public class Session : IEntity
     {
-        public string Id { get; set; }
+        /// <summary>
+        /// Gets or sets the ID of the session.
+        /// </summary>
+        public string? Id { get; set; }
+
+        /// <summary>
+        /// Gets or sets the start time of the session.
+        /// </summary>
         public DateTime StartTime { get; set; }
-        public string MovieId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the ID of the movie associated with the session.
+        /// </summary>
+        public string? MovieId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the movie associated with the session.
+        /// </summary>
         public virtual Movie? Movie { get; set; }
-        public string HallId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the ID of the hall associated with the session.
+        /// </summary>
+        public string? HallId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the hall associated with the session.
+        /// </summary>
         public virtual Hall? Hall { get; set; }
-        public List<Ticket> Tickets { get; set; }
+
+        /// <summary>
+        /// Gets or sets the list of tickets associated with the session.
+        /// </summary>
+        public virtual List<Ticket>? Tickets { get; set; }
     }
 }

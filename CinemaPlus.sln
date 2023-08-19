@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Business", "Cinema.Business\Cinema.Business.csproj", "{5AB94CE4-E570-4EF0-A36B-778202EC8802}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema.Business", "Cinema.Business\Cinema.Business.csproj", "{5AB94CE4-E570-4EF0-A36B-778202EC8802}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Core", "Cinema.Core\Cinema.Core.csproj", "{59F73AEE-BC4A-4670-A909-DE0426391AA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema.Core", "Cinema.Core\Cinema.Core.csproj", "{59F73AEE-BC4A-4670-A909-DE0426391AA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.DataAccess", "Cinema.DataAccess\Cinema.DataAccess.csproj", "{D0D77B31-CAFA-4898-9FB4-0094BDA39AEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema.DataAccess", "Cinema.DataAccess\Cinema.DataAccess.csproj", "{D0D77B31-CAFA-4898-9FB4-0094BDA39AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.Entities", "Cinema.Entities\Cinema.Entities.csproj", "{30FE6878-5494-4B12-8877-CAA4594726CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema.Entities", "Cinema.Entities\Cinema.Entities.csproj", "{30FE6878-5494-4B12-8877-CAA4594726CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cinema.UI", "Cinema.UI\Cinema.UI.csproj", "{4627F749-336E-44E3-AAC3-40307BA22C57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cinema.UI", "Cinema.UI\Cinema.UI.csproj", "{4627F749-336E-44E3-AAC3-40307BA22C57}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66B1C86C-6306-47AA-84A9-9887DC3340AF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

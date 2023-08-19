@@ -1,20 +1,104 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eliah\\source\\repos\\CinemaPlus\\Cinema.UI\\Cinema.UI.csproj": {}
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.UI\\Cinema.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eliah\\source\\repos\\CinemaPlus\\Cinema.UI\\Cinema.UI.csproj": {
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Business\\Cinema.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliah\\source\\repos\\CinemaPlus\\Cinema.UI\\Cinema.UI.csproj",
-        "projectName": "Cinema.UI",
-        "projectPath": "C:\\Users\\eliah\\source\\repos\\CinemaPlus\\Cinema.UI\\Cinema.UI.csproj",
-        "packagesPath": "C:\\Users\\eliah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliah\\source\\repos\\CinemaPlus\\Cinema.UI\\obj\\",
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Business\\Cinema.Business.csproj",
+        "projectName": "Cinema.Business",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Business\\Cinema.Business.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eliah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj"
+              },
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
+        "projectName": "Cinema.Core",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +151,266 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
+        "projectName": "Cinema.DataAccess",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.DataAccess\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj"
+              },
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj",
+        "projectName": "Cinema.Entities",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\Cinema.Entities.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject\\Cinema.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Core\\Cinema.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.EnvironmentVariables": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.UI\\Cinema.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.UI\\Cinema.UI.csproj",
+        "projectName": "Cinema.UI",
+        "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.UI\\Cinema.UI.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.UI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Business\\Cinema.Business.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject\\Cinema.Business\\Cinema.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -79,7 +422,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.316\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,18 +1,30 @@
 ﻿using Cinema.Core.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Entities.Models
 {
-    public class Subtitle:IEntity
+    /// <summary>
+    /// Represents a subtitle associated with a movie.
+    /// </summary>
+    public class Subtitle : IEntity
     {
-        public string Id { get; set; }
+        /// <summary>
+        /// Gets or sets the ID of the subtitle.
+        /// </summary>
+        public string? Id { get; set; }
 
-        public string MovieId { get; set; }
-        public string ImageUrl { get; set; }
-        public virtual Movie Movie { get; set; }
+        /// <summary>
+        /// Gets or sets the URL of the subtitle's image.
+        /// </summary>
+        public string? ImageUrl { get; set; }
+
+        /// <summary>
+        /// Gets or sets the ID of the movie associated with the subtitle.
+        /// </summary>
+        public string? MovieId { get; set; }
+
+        /// <summary>
+        /// Gets or sets the movie associated with the subtitle.
+        /// </summary>
+        public virtual Movie? Movie { get; set; }
     }
 }

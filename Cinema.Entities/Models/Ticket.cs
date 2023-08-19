@@ -1,20 +1,50 @@
 ﻿using Cinema.Core.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Entities.Models
 {
-    public class Ticket:IEntity
+    /// <summary>
+    /// Represents a ticket for a movie session.
+    /// </summary>
+    public class Ticket : IEntity
     {
-        public string Id { get; set; }
+        /// <summary>
+        /// Gets or sets the ID of the ticket.
+        /// </summary>
+        public string? Id { get; set; }
 
-        public string SessionId { get; set; }
+        /// <summary>
+        /// Gets or sets the ID of the session associated with the ticket.
+        /// </summary>
+        public string? SessionId { get; set; }
 
+        /// <summary>
+        /// Gets or sets the session associated with the ticket.
+        /// </summary>
         public virtual Session? Session { get; set; }
 
-        public decimal Price { get; set; }
+        /// <summary>
+        /// Gets or sets the purchase date of the ticket.
+        /// </summary>
+        public DateTime PurchaseDate { get; set; }
+
+        /// <summary>
+        /// Gets or sets the email associated with the ticket.
+        /// </summary>
+        public string? Email { get; set; }
+
+        /// <summary>
+        /// Gets or sets the phone number associated with the ticket.
+        /// </summary>
+        public string? PhoneNumber { get; set; }
+
+        /// <summary>
+        /// Gets or sets the payment method used for the ticket.
+        /// </summary>
+        public string? Payment { get; set; }
+
+        /// <summary>
+        /// Gets or sets the card number used for payment.
+        /// </summary>
+        public string? CardNumber { get; set; }
     }
 }
