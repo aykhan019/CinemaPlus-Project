@@ -18,15 +18,31 @@ namespace Cinema.UI.Controllers
             return View();
         }
 
+        public IActionResult Platinum()
+        {
+            return View();
+        }
+
+       public IActionResult DolbyAtmos()
+        {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
+
+        public IActionResult Services()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
+
     }
 }

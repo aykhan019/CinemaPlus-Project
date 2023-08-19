@@ -1,0 +1,78 @@
+﻿
+
+.platinum-bcg {
+    background-image: url("../assets/images/platinumbgnew.jpg");
+    background-size: cover; /* Cover the entire element */
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.607);
+    background-blend-mode: overlay;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+.platinum-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.platinum-title {
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.platinum-text {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.text-style {
+    font-size: 15px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.platinum-description-container {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.description-sec {
+    flex-basis: 50%;
+    display: flex;
+}
+
+.desc-box {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00cdf0;
+    flex-basis: 50%;
+}
+
+
+@media (max-width:768px) {
+    .description-sec {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .platinum-container {
+        width: 90%;
+    }
+}

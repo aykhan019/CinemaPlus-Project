@@ -1,4 +1,5 @@
 ﻿using Cinema.Business.Abstraction.Extensions;
+using Cinema.DataAccess.Abstract;
 using Cinema.DataAccess.Concrete.EFEntityFramework;
 using Cinema.Entities.Models;
 using System;
@@ -11,9 +12,9 @@ namespace Cinema.Business.Concrete
 {
     public class TheatreImageService : IExtendedTheatreImageService
     {
-        private readonly EFTheatreImageDal _hallImageDal;
+        private readonly ITheatreImageDal _hallImageDal;
 
-        public TheatreImageService(EFTheatreImageDal hallImageDal)
+        public TheatreImageService(ITheatreImageDal hallImageDal)
         {
             _hallImageDal = hallImageDal;
         }

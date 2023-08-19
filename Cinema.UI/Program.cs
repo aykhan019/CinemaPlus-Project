@@ -1,4 +1,5 @@
 using Cinema.Business.Abstraction;
+using Cinema.Business.Abstraction.Extensions;
 using Cinema.Business.Concrete;
 using Cinema.DataAccess.Abstract;
 using Cinema.DataAccess.Concrete.EFEntityFramework;
@@ -8,15 +9,15 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IHallService, HallService>();
-builder.Services.AddScoped<ILanguageService, LanguageService>();
-builder.Services.AddScoped<IMovieService, MovieService>();
-builder.Services.AddScoped<ISeatService, SeatService>();
-builder.Services.AddScoped<ISessionService, SessionService>();
-builder.Services.AddScoped<ISubtitleService, SubtitleService>();
-builder.Services.AddScoped<ITheatreImageService, TheatreImageService>();
-builder.Services.AddScoped<ITheatreService, TheatreService>();
-builder.Services.AddScoped<ITicketService, TicketService>();
+builder.Services.AddScoped<IExtendedHallService, HallService>();
+builder.Services.AddScoped<IExtendedLanguageService, LanguageService>();
+builder.Services.AddScoped<IExtendedMovieService, MovieService>();
+builder.Services.AddScoped<IExtendedSeatService, SeatService>();
+builder.Services.AddScoped<IExtendedSessionService, SessionService>();
+builder.Services.AddScoped<IExtendedSubtitleService, SubtitleService>();
+builder.Services.AddScoped<IExtendedTheatreImageService, TheatreImageService>();
+builder.Services.AddScoped<IExtendedTheatreService, TheatreService>();
+builder.Services.AddScoped<IExtendedTicketService, TicketService>();
 
 
 builder.Services.AddScoped<IHallDal, EFHallDal>();

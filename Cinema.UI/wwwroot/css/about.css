@@ -1,0 +1,62 @@
+﻿
+
+
+
+.about-container {
+    width: 100%;
+    background-image: url("../assets/images/about.jpg");
+    background-size: cover;
+    /* Cover the entire element */
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.607);
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+
+.inner-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.inner-text {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    width: 80%;
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.theatre-container {
+    width: 50%;
+    padding: 15px;
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.theatre-box {
+    border-radius: 25px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+
+    .theatre-box:hover {
+        color: #00cdf0;
+        background-color: white;
+        transition: 0.5s ease;
+        cursor: pointer;
+    }
