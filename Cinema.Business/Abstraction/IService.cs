@@ -8,13 +8,14 @@ namespace Cinema.Business.Abstraction
 {
     public interface IService<T>
     {
-        T GetById(string id);
+        Task<T> GetByIdAsync(string id);
     
-        void Add(T entity); 
+        Task AddAsync(T entity);
 
-        void Update(T entity);  
+        Task UpdateAsync(T entity);
 
-        void Delete(T entity);
-        List<T> GetAll();
+        Task DeleteAsync(T entity);
+
+        Task<IEnumerable<T>> GetAllAsync();
     }
 }

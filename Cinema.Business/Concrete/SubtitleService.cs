@@ -1,11 +1,6 @@
 ﻿using Cinema.Business.Abstraction.Extensions;
 using Cinema.DataAccess.Abstract;
 using Cinema.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Business.Concrete
 {
@@ -18,29 +13,29 @@ namespace Cinema.Business.Concrete
             _subtitleDal = subtitleDal;
         }
 
-        public void Add(Subtitle entity)
+        public async Task AddAsync(Subtitle entity)
         {
-            _subtitleDal.Add(entity);
+            await _subtitleDal.AddAsync(entity);
         }
 
-        public void Delete(Subtitle entity)
+        public async Task DeleteAsync(Subtitle entity)
         {
-            _subtitleDal.Delete(entity);
+            await _subtitleDal.DeleteAsync(entity);
         }
 
-        public List<Subtitle> GetAll()
+        public async Task<IEnumerable<Subtitle>> GetAllAsync()
         {
-            return _subtitleDal.GetList();
+            return await _subtitleDal.GetListAsync();
         }
 
-        public Subtitle GetById(string id)
+        public async Task<Subtitle> GetByIdAsync(string id)
         {
-            return _subtitleDal.Get(s => s.Id == id);
+            return await _subtitleDal.GetAsync(s => s.Id == id);
         }
 
-        public void Update(Subtitle entity)
+        public async Task UpdateAsync(Subtitle entity)
         {
-            _subtitleDal.Update(entity);
+            await _subtitleDal.UpdateAsync(entity);
         }
     }
 }

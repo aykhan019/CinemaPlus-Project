@@ -22,6 +22,9 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Cinema.Business\Cinema.Business.csproj" />
+    <ProjectReference Include="..\Cinema.Core\Cinema.Core.csproj" />
+    <ProjectReference Include="..\Cinema.DataAccess\Cinema.DataAccess.csproj" />
+    <ProjectReference Include="..\Cinema.Entities\Cinema.Entities.csproj" />
   </ItemGroup>
 
   <ItemGroup>

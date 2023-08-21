@@ -1,11 +1,6 @@
 ﻿using Cinema.Business.Abstraction.Extensions;
 using Cinema.DataAccess.Abstract;
 using Cinema.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Business.Concrete
 {
@@ -18,29 +13,29 @@ namespace Cinema.Business.Concrete
             _ticketDal = ticketDal;
         }
 
-        public void Add(Ticket entity)
+        public async Task AddAsync(Ticket entity)
         {
-            _ticketDal.Add(entity);
+            await _ticketDal.AddAsync(entity);
         }
 
-        public void Delete(Ticket entity)
+        public async Task DeleteAsync(Ticket entity)
         {
-            _ticketDal.Delete(entity);
+            await _ticketDal.DeleteAsync(entity);
         }
 
-        public List<Ticket> GetAll()
+        public async Task<IEnumerable<Ticket>> GetAllAsync()
         {
-            return _ticketDal.GetList();
+            return await _ticketDal.GetListAsync();
         }
 
-        public Ticket GetById(string id)
+        public async Task<Ticket> GetByIdAsync(string id)
         {
-            return _ticketDal.Get(t => t.Id == id);
+            return await _ticketDal.GetAsync(t => t.Id == id);
         }
 
-        public void Update(Ticket entity)
+        public async Task UpdateAsync(Ticket entity)
         {
-            _ticketDal.Update(entity);
+            await _ticketDal.UpdateAsync(entity);
         }
     }
 }

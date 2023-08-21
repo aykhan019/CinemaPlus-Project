@@ -1,11 +1,6 @@
 ﻿using Cinema.Business.Abstraction.Extensions;
 using Cinema.DataAccess.Abstract;
 using Cinema.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Business.Concrete
 {
@@ -18,29 +13,29 @@ namespace Cinema.Business.Concrete
             _sessionDal = sessionDal;
         }
 
-        public void Add(Session entity)
+        public async Task AddAsync(Session entity)
         {
-            _sessionDal.Add(entity);
+          await _sessionDal.AddAsync(entity);
         }
 
-        public void Delete(Session entity)
+        public async Task DeleteAsync(Session entity)
         {
-            _sessionDal.Delete(entity); 
+            await _sessionDal.DeleteAsync(entity);
         }
 
-        public List<Session> GetAll()
+        public async Task<IEnumerable<Session>> GetAllAsync()
         {
-            return _sessionDal.GetList();
+            return await _sessionDal.GetListAsync();
         }
 
-        public Session GetById(string id)
+        public async Task<Session> GetByIdAsync(string id)
         {
-            return _sessionDal.Get(s => s.Id == id);
+            return await _sessionDal.GetAsync(s => s.Id == id);
         }
 
-        public void Update(Session entity)
+        public async Task UpdateAsync(Session entity)
         {
-            _sessionDal.Update(entity);
+            await _sessionDal.UpdateAsync(entity);
         }
     }
 }

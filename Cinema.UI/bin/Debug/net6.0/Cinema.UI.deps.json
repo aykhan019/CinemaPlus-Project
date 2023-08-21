@@ -9,6 +9,9 @@
       "Cinema.UI/1.0.0": {
         "dependencies": {
           "Cinema.Business": "1.0.0",
+          "Cinema.Core": "1.0.0",
+          "Cinema.DataAccess": "1.0.0",
+          "Cinema.Entities": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.0",

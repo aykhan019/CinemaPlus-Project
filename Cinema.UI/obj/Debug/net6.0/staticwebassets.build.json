@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BoHDm1Vq+tE+9LqSZubUaqDVPtMPUK4cm0BUy0FJ4gk=",
+  "Hash": "oaG7qeYwsFZ24GO+9nmmDRc68wu4D/HNCRd5IJ0vVik=",
   "Source": "Cinema.UI",
   "BasePath": "_content/Cinema.UI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Cinema.UI\\wwwroot",
       "Source": "Cinema.UI",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Cinema.UI.styles.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Cinema.UI.styles.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "Cinema.UI.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Cinema.UI.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Cinema.UI.styles.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Cinema.UI.bundle.scp.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Cinema.UI.bundle.scp.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "Cinema.UI.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Cinema.UI.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Cinema.UI.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\about.jpg",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\about.jpg",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/about.jpg",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\about.jpg"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\appstore.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\appstore.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/appstore.png",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\appstore.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\cpluslogo.svg",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\cpluslogo.svg",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/cpluslogo.svg",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\cpluslogo.svg"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\dolbywh.250x0.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\dolbywh.250x0.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/dolbywh.250x0.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\dolbywh.250x0.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\google.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\google.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/google.png",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\google.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\platinumbgnew.jpg",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\platinumbgnew.jpg",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/platinumbgnew.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\platinumbgnew.jpg"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\plicon1.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\plicon1.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/plicon1.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\plicon1.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\plicon2.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\plicon2.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/plicon2.png",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\plicon2.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\plicon4.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\plicon4.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/plicon4.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\plicon4.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\sicon1.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\sicon1.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/sicon1.png",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\sicon1.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\sicon2.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\sicon2.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/sicon2.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\sicon2.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\sicon3.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\sicon3.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/sicon3.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\sicon3.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\sicon4.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\sicon4.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/sicon4.png",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\sicon4.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\sicon5.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\sicon5.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/sicon5.png",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\sicon5.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\sicon6.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\sicon6.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/sicon6.png",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\sicon6.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\usb_charge.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\usb_charge.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/usb_charge.png",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\usb_charge.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\assets\\images\\vipclubcinema2.png",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\vipclubcinema2.png",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "assets/images/vipclubcinema2.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\vipclubcinema2.png"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\css\\about.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\about.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "css/about.css",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\css\\about.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\css\\dolbyAtmos.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\dolbyAtmos.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "css/dolbyAtmos.css",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\css\\dolbyAtmos.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\css\\index.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\index.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "css/index.css",
       "AssetKind": "All",
@@ -391,10 +391,10 @@
       "OriginalItemSpec": "wwwroot\\css\\index.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\css\\platinum.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\platinum.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "css/platinum.css",
       "AssetKind": "All",
@@ -408,10 +408,10 @@
       "OriginalItemSpec": "wwwroot\\css\\platinum.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\css\\services.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\services.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "css/services.css",
       "AssetKind": "All",
@@ -425,10 +425,10 @@
       "OriginalItemSpec": "wwwroot\\css\\services.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\favicon.ico",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -442,10 +442,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\js\\index.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\fonts\\GothamMedium.otf",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
+      "BasePath": "_content/Cinema.UI",
+      "RelativePath": "fonts/GothamMedium.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\fonts\\GothamMedium.otf"
+    },
+    {
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\js\\index.js",
+      "SourceId": "Cinema.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "js/index.js",
       "AssetKind": "All",
@@ -459,10 +476,10 @@
       "OriginalItemSpec": "wwwroot\\js\\index.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -476,10 +493,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -493,10 +510,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -510,10 +527,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -527,10 +544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -544,10 +561,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -561,10 +578,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -578,10 +595,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -595,10 +612,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -612,10 +629,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -629,10 +646,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -646,10 +663,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -663,10 +680,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -680,10 +697,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -697,10 +714,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -714,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -731,10 +748,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -748,10 +765,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -765,10 +782,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -782,10 +799,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -799,10 +816,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -816,10 +833,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -833,10 +850,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -850,10 +867,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -867,10 +884,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -884,10 +901,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -901,10 +918,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -918,10 +935,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -935,10 +952,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -952,10 +969,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -969,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -986,10 +1003,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -1003,10 +1020,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -1020,10 +1037,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -1037,10 +1054,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -1054,10 +1071,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -1071,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -1088,10 +1105,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -1105,10 +1122,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -1122,10 +1139,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -1139,10 +1156,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -1156,10 +1173,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -1173,10 +1190,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -1190,10 +1207,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -1207,10 +1224,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -1224,10 +1241,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -1241,10 +1258,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -1258,10 +1275,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -1275,10 +1292,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -1292,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -1309,10 +1326,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -1326,10 +1343,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -1343,10 +1360,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -1360,10 +1377,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -1377,10 +1394,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -1394,10 +1411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -1411,10 +1428,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Cinema.UI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\eliah\\Desktop\\CinemaPlus\\CinemaPlus-Project\\Cinema.UI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\",
       "BasePath": "_content/Cinema.UI",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
