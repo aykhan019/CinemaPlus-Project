@@ -1,7 +1,9 @@
 ﻿using Cinema.Business.Abstraction;
+using Cinema.Business.Abstraction.Extensions;
 using Cinema.UI.Helpers.ConstantHelpers;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.ChangeTracking.Internal;
 
 namespace Cinema.UI.Controllers.ApiControllers
 {
@@ -9,11 +11,17 @@ namespace Cinema.UI.Controllers.ApiControllers
     [ApiController]
     public class MovieController : ControllerBase
     {
-        private readonly IMovieService _movieService;
+        private readonly IExtendedMovieService _movieService;
 
-        public MovieController(IMovieService movieService)
+        private readonly IExtendedLanguageService _languageService;
+
+        private readonly IExtendedSubtitleService _subtitleService;
+
+        public MovieController(IExtendedMovieService movieService, IExtendedLanguageService languageService, IExtendedSubtitleService subtitleService)
         {
             _movieService = movieService;
+            _languageService = languageService;
+            _subtitleService = subtitleService;
         }
 
         [HttpGet(Routes.GetAllMovies)]
@@ -21,14 +29,29 @@ namespace Cinema.UI.Controllers.ApiControllers
         {
             try
             {
-                var movies = await _movieService.GetAll();
+                var movies = (await _movieService.GetAllAsync()).ToList();
 
+                if (movies != null)
+                {
+                    movies.ForEach(async movie =>
+                    {
+                        movie.Languages = (await _languageService.GetMovieLanguages(movie.Id)).ToList();
 
+                        movie.Subtitles = (await _subtitleService.GetMovieSubtitles(movie.Id)).ToList();
+
+                        if (movie.Languages.Count == 0 || movie.Subtitles.Count == 0) {
+                            var a = 123;
+                        }
+                    });
+
+                    return Ok(movies);
+                }
+
+                return NotFound();
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                throw;
+                return BadRequest(ex.Message);
             }
         }
     }

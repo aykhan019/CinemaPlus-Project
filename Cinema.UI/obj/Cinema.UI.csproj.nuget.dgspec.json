@@ -11,7 +11,7 @@
         "projectName": "Cinema.Business",
         "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.Business\\Cinema.Business.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject1\\Cinema.Business\\obj\\",
+        "outputPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,7 +95,7 @@
         "projectName": "Cinema.Core",
         "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.Core\\Cinema.Core.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject1\\Cinema.Core\\obj\\",
+        "outputPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -172,7 +172,7 @@
         "projectName": "Cinema.DataAccess",
         "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject1\\Cinema.DataAccess\\obj\\",
+        "outputPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -256,7 +256,7 @@
         "projectName": "Cinema.Entities",
         "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.Entities\\Cinema.Entities.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject1\\Cinema.Entities\\obj\\",
+        "outputPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -349,7 +349,7 @@
         "projectName": "Cinema.UI",
         "projectPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\Cinema.UI.csproj",
         "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\obj\\",
+        "outputPath": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",

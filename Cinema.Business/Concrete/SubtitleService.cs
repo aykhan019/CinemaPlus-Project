@@ -33,6 +33,11 @@ namespace Cinema.Business.Concrete
             return await _subtitleDal.GetAsync(s => s.Id == id);
         }
 
+        public async Task<IEnumerable<Subtitle>> GetMovieSubtitles(string movieId)
+        {
+            return await _subtitleDal.GetListAsync(s => s.MovieId == movieId);
+        }
+
         public async Task UpdateAsync(Subtitle entity)
         {
             await _subtitleDal.UpdateAsync(entity);

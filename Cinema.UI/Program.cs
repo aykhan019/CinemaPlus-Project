@@ -1,4 +1,3 @@
-using Cinema.Business.Abstraction;
 using Cinema.Business.Abstraction.Extensions;
 using Cinema.Business.Concrete;
 using Cinema.DataAccess.Abstract;

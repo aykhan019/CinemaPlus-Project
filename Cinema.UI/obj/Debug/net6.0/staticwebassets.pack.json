@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\google.png"
     },
     {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\places_icon.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\places_icon.svg"
+    },
+    {
       "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\platinumbgnew.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\platinumbgnew.jpg"
     },
@@ -39,6 +43,10 @@
     {
       "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\plicon4.png",
       "PackagePath": "staticwebassets\\assets\\images\\plicon4.png"
+    },
+    {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\select_icon.svg",
+      "PackagePath": "staticwebassets\\assets\\images\\select_icon.svg"
     },
     {
       "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\assets\\images\\sicon1.png",
@@ -85,24 +93,56 @@
       "PackagePath": "staticwebassets\\css\\index.css"
     },
     {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\layout.css",
+      "PackagePath": "staticwebassets\\css\\layout.css"
+    },
+    {
       "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\platinum.css",
       "PackagePath": "staticwebassets\\css\\platinum.css"
+    },
+    {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\schedule.css",
+      "PackagePath": "staticwebassets\\css\\schedule.css"
     },
     {
       "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\services.css",
       "PackagePath": "staticwebassets\\css\\services.css"
     },
     {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\css\\today.css",
+      "PackagePath": "staticwebassets\\css\\today.css"
+    },
+    {
       "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\fonts\\Gotham Medium.ttf",
+      "PackagePath": "staticwebassets\\fonts\\Gotham Medium.ttf"
     },
     {
       "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\fonts\\GothamMedium.otf",
       "PackagePath": "staticwebassets\\fonts\\GothamMedium.otf"
     },
     {
-      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\js\\index.js",
-      "PackagePath": "staticwebassets\\js\\index.js"
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\js\\functions.js",
+      "PackagePath": "staticwebassets\\js\\functions.js"
+    },
+    {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\js\\layout.js",
+      "PackagePath": "staticwebassets\\js\\layout.js"
+    },
+    {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\js\\schedule.js",
+      "PackagePath": "staticwebassets\\js\\schedule.js"
+    },
+    {
+      "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\js\\today.js",
+      "PackagePath": "staticwebassets\\js\\today.js"
     },
     {
       "Id": "C:\\Users\\Ayxan\\source\\repos\\CinemaPlus-DiplomaProject1\\Cinema.UI\\wwwroot\\lib\\bootstrap\\LICENSE",

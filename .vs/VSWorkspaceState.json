@@ -1,7 +1,14 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Cinema.UI",
+    "\\Cinema.UI\\Controllers",
+    "\\Cinema.UI\\Controllers\\ApiControllers",
+    "\\Cinema.UI\\Views",
+    "\\Cinema.UI\\Views\\Home",
+    "\\Cinema.UI\\wwwroot",
+    "\\Cinema.UI\\wwwroot\\css"
   ],
-  "SelectedNode": "\\CinemaPlus.sln",
+  "SelectedNode": "\\Cinema.UI\\wwwroot\\css\\layout.css",
   "PreviewInSolutionExplorer": false
 }

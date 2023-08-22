@@ -1,7 +1,167 @@
-﻿@{
+﻿@model TodayMoviesViewModel;
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div style="height:70vh">
 
+<link rel="stylesheet" href="~/css/index.css" />
+<link rel="stylesheet" href="~/css/today.css" />
+<link rel="stylesheet" href="~/css/schedule.css" /> 
+
+
+<div class="tabs filter" id="repertuar">
+    <div class="tab_header">
+        <a href="#" class="active" id="today_list" rel="today">TODAY</a>
+        <a href="#" id="schedule_list" rel="schedule">SCHEDULE</a>
+        <a href="#" id="soon_list" rel="soon">SOON</a>
+    </div>
+
+    <div class="tab_body">
+        <div class="tab today_list" style="display: block">
+            <div class="filter_block mobile_hide">
+                <div class="mobile_hide">
+                    <select id="cinemaFilter" class="mobile_hide custom_select">
+                        <option class="option" value="All Cinemas">Cinema</option>
+                        @if (Model.Theatres != null)
+                        {
+                            @foreach (var theatre in Model.Theatres)
+                            {
+                                <option class="option" value="@theatre.Name">@theatre.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="mobile_hide">
+                    <select id="languageFilter" class="mobile_hide custom_select">
+                        <option value="All Languages">Language</option>
+                        @if (Model.Languages != null)
+                        {
+                            @foreach (var language in Model.Languages)
+                            {
+                                <option class="option" value="@language">@language</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="movie_english mobile_hide">
+                    <a href="#" class="mobile_hide" id="english-link">Movies in English</a>
+                </div>
+                <div class="clr"></div>
+            </div>
+
+            <div class="movies-container">
+                <div id="movies">
+                    <div class="spinner-container">
+                        <div class="spinner-border" role="status" id="movies-spinner">
+                            <span class="sr-only"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab schedule_list" style="display: none">
+            <div class="filter_block">
+                <div class="date_filter">
+                    <a href="#"
+                       class="active"
+                       id="today-btn"
+                       data-value="19.08.2023"
+                       date-text="Today">Today</a>
+                    <a href="#"
+                       id="tomorrow-btn"
+                       data-value="20.08.2023"
+                       date-text="Tomorrow">Tomorrow</a>
+
+                    <select class="home_date_sessions">
+                        <option value="19.08.2023" data-value="19.08.2023">
+                            19.08.2023
+                        </option>
+                        <option value="20.08.2023" data-value="20.08.2023">
+                            20.08.2023
+                        </option>
+                        <option value="21.08.2023" data-value="21.08.2023">
+                            21.08.2023
+                        </option>
+                        <option value="22.08.2023" data-value="22.08.2023">
+                            22.08.2023
+                        </option>
+                        <option value="23.08.2023" data-value="23.08.2023">
+                            23.08.2023
+                        </option>
+                        <option value="24.08.2023" data-value="24.08.2023">
+                            24.08.2023
+                        </option>
+                        <option value="24.08.2023" data-value="25.08.2023">
+                            25.08.2023
+                        </option>
+                    </select>
+                </div>
+                <div class="cinema_filter" id="sesscf">
+                    <select name="home_sesx_cinema">
+                        <option value="all">Cinema</option>
+                        <option value="28Mall" data-cid="1029">28 Mall</option>
+                        <option value="GanjlikMall" data-cid="1079">
+                            Ganjlik Mall
+                        </option>
+                        <option value="DenizMall" data-cid="1768695">
+                            Deniz Mall
+                        </option>
+                        <option value="AzerbaijanC." data-cid="1083">
+                            Azerbaijan Cinema
+                        </option>
+                        <option value="AmburanMall" data-cid="1087">
+                            Amburan Mall
+                        </option>
+                        <option value="Sumgayit" data-cid="1640449">Sumgayit</option>
+
+                        <option value="KhamsaPark" data-cid="1095">
+                            Khamsa Park (Ganja)
+                        </option>
+                        <option value="GanjaMall" data-cid="629922">
+                            Ganja Mall (Ganja)
+                        </option>
+                        <option value="Nakhchivan" data-cid="1464911">
+                            Nakhchivan
+                        </option>
+                        <!--<option value="AygunCity" data-cid="1091">Aygun Mall</option> -->
+                        <option value="Shamakhi" data-cid="1768759">Shamakhi</option>
+                    </select>
+                    <div class="clr"></div>
+                </div>
+                <div>
+                    <select name="sess_lang_sorter" id="sess_lang_sorter">
+                        <option value="0">Language</option>
+                        <option value="0">All languages</option>
+                        <option value="1800">Azərbaycanca</option>
+                        <option value="1798">На русском</option>
+                        <option value="1797">In English</option>
+                        <option value="1799">Türkçe</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="sessions">
+                <div class="spinner-container">
+                    <div class="spinner-border" role="status" id="sessions-spinner">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+
+                <div id="sessions-current-date" style="display: none">
+                    <p></p>
+                </div>
+
+                <table id="sessions-table" class="sessions_table container">
+                </table>
+            </div>
+        </div>
+
+        <div class="tab soon_list" style="display: none">Soon</div>
+    </div>
 </div>
+
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/functions.js"></script>
+<script src="~/js/today.js"></script>
+<script src="~/js/schedule.js"></script>

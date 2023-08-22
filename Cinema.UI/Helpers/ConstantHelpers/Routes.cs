@@ -2,8 +2,12 @@
 {
     public static class Routes
     {
-        public const string MovieAPI = "api/Movie";
+        public const string MovieAPI = "/api/Movie";
 
         public const string GetAllMovies = "GetAllMovies";
+
+        public const string LanguageAPI = "/api/Language";
+            
+        public const string SubtitleAPI = "/api/Subtitle";
     }
 }
