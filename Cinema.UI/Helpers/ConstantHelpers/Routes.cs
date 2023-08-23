@@ -9,5 +9,9 @@
         public const string LanguageAPI = "/api/Language";
             
         public const string SubtitleAPI = "/api/Subtitle";
+
+        public const string SessionAPI = "/api/Session";
+
+        public const string GetAllSessions = "GetAllSessions";
     }
 }

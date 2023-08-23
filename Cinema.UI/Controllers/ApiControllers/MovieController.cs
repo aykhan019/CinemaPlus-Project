@@ -38,10 +38,6 @@ namespace Cinema.UI.Controllers.ApiControllers
                         movie.Languages = (await _languageService.GetMovieLanguages(movie.Id)).ToList();
 
                         movie.Subtitles = (await _subtitleService.GetMovieSubtitles(movie.Id)).ToList();
-
-                        if (movie.Languages.Count == 0 || movie.Subtitles.Count == 0) {
-                            var a = 123;
-                        }
                     });
 
                     return Ok(movies);

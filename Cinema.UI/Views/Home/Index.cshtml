@@ -26,7 +26,7 @@
                         {
                             @foreach (var theatre in Model.Theatres)
                             {
-                                <option class="option" value="@theatre.Name">@theatre.Name</option>
+                                <option class="option" value="@theatre.Id">@theatre.Name</option>
                             }
                         }
                     </select>
@@ -50,12 +50,14 @@
             </div>
 
             <div class="movies-container">
-                <div id="movies">
-                    <div class="spinner-container">
-                        <div class="spinner-border" role="status" id="movies-spinner">
-                            <span class="sr-only"></span>
-                        </div>
+                <div class="spinner-container" id="movies-spinner">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only"></span>
                     </div>
+                </div>
+
+                <div id="movies">
+                   
                 </div>
             </div>
         </div>
@@ -142,8 +144,8 @@
             </div>
 
             <div id="sessions">
-                <div class="spinner-container">
-                    <div class="spinner-border" role="status" id="sessions-spinner">
+                <div class="spinner-container" id="sessions-spinner">
+                    <div class="spinner-border" role="status">
                         <span class="sr-only"></span>
                     </div>
                 </div>

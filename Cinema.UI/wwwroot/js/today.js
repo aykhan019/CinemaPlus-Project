@@ -1,6 +1,8 @@
 ﻿const MAX_FORMAT_COUNT = 5;
 const TITLE_LENGTH_LIMIT = 30;
 var ALL_MOVIES;
+var ALL_SESSIONS = null;
+var ALL_THEATRES = null;
 
 document.addEventListener("DOMContentLoaded", function () {
     const tabHeaders = document.querySelectorAll(".tab_header a");
@@ -31,6 +33,105 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function showSpinner() {
+    document.getElementById("movies-spinner").style.display = 'block';
+}
+
+function hideSpinner() {
+    document.getElementById("movies-spinner").style.display = 'none';
+}
+
+var moviesContainer = document.getElementById("movies");
+function clearMoviesContainer() {
+    moviesContainer.innerHTML = '';
+}
+
+function distinctMoviesByMovieId(movies) {
+    var uniqueMovies = [];
+    var uniqueMovieIds = [];
+
+    movies.forEach(function (movie) {
+
+        // Check if the movieId is not in the uniqueMovieIds array
+        if (!uniqueMovieIds.includes(movie.id)) {
+            uniqueMovieIds.push(movie.id);
+            uniqueMovies.push(movie);
+        }
+    });
+
+    return uniqueMovies;
+}
+
+var AllCinemas = "All Cinemas";
+var AllLanguages = "All Languages";
+
+function getCinemaFilteredSessions(sessions, value) {
+    if (value === AllCinemas) {
+        return sessions;
+    }
+
+    // value is theatreId here
+    return sessions.filter(function (session) {
+        return session.hall.theatreId === value;
+    });
+}
+
+function getLanguageFilteredMovies(movies, value) {
+    if (value === AllLanguages) {
+        return movies;
+    }
+
+    // value is language.Name here
+    return movies.filter(function (movie) {
+        return movie.language.name === value;
+    });
+}
+
+
+var cinemaSelectElement = document.getElementById("cinemaFilter");
+var languageSelectElement = document.getElementById("languageFilter");
+async function handleChange() {
+    clearMoviesContainer();
+    showSpinner();
+
+    // Get the selected option's value
+    var selectedCinema = cinemaSelectElement.value;
+    var selectedLanguage = languageSelectElement.value;
+
+    if (ALL_SESSIONS === null) {
+        ALL_SESSIONS = await makeAjaxRequest("/api/Session/GetAllSessions");
+    }
+
+    var filteredSessions = getCinemaFilteredSessions(ALL_SESSIONS, selectedCinema);
+
+    var filteredMovies = filteredSessions
+        .map(function (session) {
+            var movie = ALL_MOVIES.find(function (movie) {
+                return movie.id === session.movieId;
+            });
+
+            if (movie != null) {
+                return movie;
+            }
+            return null;
+        });
+
+    var languageFilteredMovies = getLanguageFilteredMovies(filteredMovies, selectedLanguage);
+
+    var distinctedMovies = distinctMoviesByMovieId(filteredMovies);
+
+    var dateFilteredMovies = filterMoviesByDateNewToOld(distinctedMovies);
+
+    console.log(dateFilteredMovies.length);
+
+    addMoviesToView(dateFilteredMovies);
+
+    hideSpinner();
+}
+
+cinemaSelectElement.addEventListener("change", handleChange);
+languageSelectElement.addEventListener("change", handleChange);
+
 // Get the reference to the <a> element
 const englishLink = document.getElementById("english-link");
 let isBlue = false; // Track the color state
@@ -51,18 +152,34 @@ englishLink.addEventListener("click", function (event) {
     isBlue = !isBlue; // Toggle the color state
 });
 
+
+const NotApplicable = 'N/A';
+
 function filterMoviesByDateNewToOld(movieArray) {
-    return movieArray.sort((a, b) => new Date(b.Released) - new Date(a.Released));
+    return movieArray.sort((a, b) => {
+        if (a.released === NotApplicable && b.released === NotApplicable) {
+            return 0; // Both movies have  'N/A' release dates, leave them in their current order.
+        } else if (a.released === NotApplicable) {
+            return 1; // Move the movie with  'N/A' release date to the end.
+        } else if (b.released === NotApplicable) {
+            return -1; // Move the movie with  'N/A' release date to the end.
+        }
+
+        const dateA = new Date(a.released);
+        const dateB = new Date(b.released);
+
+        return dateB - dateA;
+    });
 }
 
 // Function to fetch and display movies from the JSON file
 async function fetchMovies() {
     try {
         const fetchedMovies = await makeAjaxRequest("/api/Movie/GetAllMovies");
-        console.log(fetchedMovies);
 
         if (Array.isArray(fetchedMovies)) {
-            return filterMoviesByDateNewToOld(fetchedMovies);
+            var filteredMovies = filterMoviesByDateNewToOld(fetchedMovies);
+            return filteredMovies;
         } else {
             return [];
         }
@@ -130,7 +247,7 @@ function createMovieHtml(movie) {
     <div class='movie-card'>
         <div class='movie-title'>
             <a href="/home/movies?id=${movie.id}">
-                ${truncatedTitle}
+                ${movie.id}
             </a>
         </div>
         <div class="movie-details">
@@ -158,15 +275,14 @@ function createMovieHtml(movie) {
 
 async function addMoviesToView(movies) {
     if (movies != null) {
-        var container = document.getElementById("movies");
-        if (container != null) {
+        if (moviesContainer != null) {
             var fullHtml = "";
             for (let i = 0; i < movies.length; i++) {
                 const movie = movies[i];
                 var html = createMovieHtml(movie);
                 fullHtml += html;
             }
-            container.innerHTML = fullHtml;
+            moviesContainer.innerHTML = fullHtml;
         }
     }
 }
@@ -174,7 +290,9 @@ async function addMoviesToView(movies) {
 async function initializeApp() {
     try {
         ALL_MOVIES = await fetchMovies();
+        showSpinner();
         addMoviesToView(ALL_MOVIES);
+        hideSpinner();
     } catch (error) {
         console.error("Error initializing the app:", error);
     }
