@@ -1,11 +1,6 @@
 ﻿using Cinema.Business.Abstraction.Extensions;
 using Cinema.DataAccess.Abstract;
 using Cinema.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Business.Concrete
 {
@@ -18,29 +13,52 @@ namespace Cinema.Business.Concrete
             _sessionDal = sessionDal;
         }
 
-        public void Add(Session entity)
+        public async Task AddAsync(Session entity)
         {
-            _sessionDal.Add(entity);
+            await _sessionDal.AddAsync(entity);
         }
 
-        public void Delete(Session entity)
+        public async Task AdjustSessionDatesToNextWeekAsync()
         {
-            _sessionDal.Delete(entity); 
+            var sessions = await _sessionDal.GetListAsync();
+
+            if (sessions != null && sessions.Count() > 0)
+            {
+                var oldestSession = sessions.OrderByDescending(s => s.StartTime).FirstOrDefault()!;
+
+                var firstAddedSessionDate = new DateTime(2023, 8, 23);
+
+                if (oldestSession.StartTime != firstAddedSessionDate)
+                {
+                    int dayDifference = (DateTime.Now - firstAddedSessionDate).Days;
+
+                    foreach (var session in sessions)
+                    {
+                        session.StartTime = session.StartTime.AddDays(dayDifference);
+                        await _sessionDal.UpdateAsync(session);
+                    }
+                }
+            }
+        }   
+
+        public async Task DeleteAsync(Session entity)
+        {
+            await _sessionDal.DeleteAsync(entity);
         }
 
-        public List<Session> GetAll()
+        public async Task<IEnumerable<Session>> GetAllAsync()
         {
-            return _sessionDal.GetList();
+            return await _sessionDal.GetListAsync();
         }
 
-        public Session GetById(string id)
+        public async Task<Session> GetByIdAsync(string id)
         {
-            return _sessionDal.Get(s => s.Id == id);
+            return await _sessionDal.GetAsync(s => s.Id == id);
         }
 
-        public void Update(Session entity)
+        public async Task UpdateAsync(Session entity)
         {
-            _sessionDal.Update(entity);
+            await _sessionDal.UpdateAsync(entity);
         }
     }
 }

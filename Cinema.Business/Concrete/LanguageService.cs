@@ -1,11 +1,6 @@
 ﻿using Cinema.Business.Abstraction.Extensions;
 using Cinema.DataAccess.Abstract;
 using Cinema.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Business.Concrete
 {
@@ -18,29 +13,34 @@ namespace Cinema.Business.Concrete
             _languageDal = languageDal;
         }
 
-        public void Add(Language entity)
+        public async Task AddAsync(Language entity)
         {
-            _languageDal.Add(entity);
+            await _languageDal.AddAsync(entity);
         }
 
-        public void Delete(Language entity)
+        public async Task DeleteAsync(Language entity)
         {
-            _languageDal.Delete(entity);
+            await _languageDal.DeleteAsync(entity);
         }
 
-        public List<Language> GetAll()
+        public async Task<IEnumerable<Language>> GetAllAsync()
         {
-            return _languageDal.GetList();
+            return await _languageDal.GetListAsync();
         }
 
-        public Language GetById(string id)
+        public async Task<Language> GetByIdAsync(string id)
         {
-            return _languageDal.Get(l => l.Id == id);
+            return await _languageDal.GetAsync(l => l.Id == id);
         }
 
-        public void Update(Language entity)
+        public async Task<IEnumerable<Language>> GetMovieLanguages(string movieId)
         {
-            _languageDal.Update(entity);
+            return await _languageDal.GetListAsync(l => l.MovieId == movieId);
+        }
+
+        public async Task UpdateAsync(Language entity)
+        {
+            await _languageDal.UpdateAsync(entity);
         }
     }
 }

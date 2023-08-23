@@ -1,12 +1,6 @@
 ﻿using Cinema.Business.Abstraction.Extensions;
 using Cinema.DataAccess.Abstract;
-using Cinema.DataAccess.Concrete.EFEntityFramework;
 using Cinema.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Business.Concrete
 {
@@ -19,29 +13,29 @@ namespace Cinema.Business.Concrete
             _hallImageDal = hallImageDal;
         }
 
-        public void Add(TheatreImage entity)
+        public async Task AddAsync(TheatreImage entity)
         {
-            _hallImageDal.Add(entity);
+            await _hallImageDal.AddAsync(entity);
         }
 
-        public void Delete(TheatreImage entity)
+        public async Task DeleteAsync(TheatreImage entity)
         {
-            _hallImageDal.Delete(entity);
+            await _hallImageDal.DeleteAsync(entity);
         }
 
-        public List<TheatreImage> GetAll()
+        public async Task<IEnumerable<TheatreImage>> GetAllAsync()
         {
-            return _hallImageDal.GetList();
+            return await _hallImageDal.GetListAsync();
         }
 
-        public TheatreImage GetById(string id)
+        public async Task<TheatreImage> GetByIdAsync(string id)
         {
-            return _hallImageDal.Get(h => h.Id == id);
+            return await _hallImageDal.GetAsync(t => t.Id == id);
         }
 
-        public void Update(TheatreImage entity)
+        public async Task UpdateAsync(TheatreImage entity)
         {
-           _hallImageDal.Update(entity);
+            await _hallImageDal.UpdateAsync(entity);
         }
     }
 }

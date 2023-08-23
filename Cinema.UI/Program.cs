@@ -1,8 +1,10 @@
-using Cinema.Business.Abstraction;
 using Cinema.Business.Abstraction.Extensions;
 using Cinema.Business.Concrete;
 using Cinema.DataAccess.Abstract;
 using Cinema.DataAccess.Concrete.EFEntityFramework;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -40,8 +42,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-
-
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
@@ -52,5 +52,6 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
 
 app.Run();

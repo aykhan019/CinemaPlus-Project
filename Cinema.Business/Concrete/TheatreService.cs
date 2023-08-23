@@ -1,11 +1,6 @@
 ﻿using Cinema.Business.Abstraction.Extensions;
 using Cinema.DataAccess.Abstract;
 using Cinema.Entities.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Cinema.Business.Concrete
 {
@@ -18,29 +13,29 @@ namespace Cinema.Business.Concrete
             _theatreDal = theatreDal;
         }
 
-        public void Add(Theatre entity)
+        public async Task AddAsync(Theatre entity)
         {
-            _theatreDal.Add(entity);
+            await _theatreDal.AddAsync(entity);
         }
 
-        public void Delete(Theatre entity)
+        public async Task DeleteAsync(Theatre entity)
         {
-            _theatreDal.Delete(entity);
+            await _theatreDal.DeleteAsync(entity);
         }
 
-        public List<Theatre> GetAll()
+        public async Task<IEnumerable<Theatre>> GetAllAsync()
         {
-            return _theatreDal.GetList();
+            return await _theatreDal.GetListAsync();
         }
 
-        public Theatre GetById(string id)
+        public async Task<Theatre> GetByIdAsync(string id)
         {
-            return _theatreDal.Get(t => t.Id == id);
+            return await _theatreDal.GetAsync(t => t.Id == id);
         }
 
-        public void Update(Theatre entity)
+        public async Task UpdateAsync(Theatre entity)
         {
-            _theatreDal.Update(entity);
+            await _theatreDal.UpdateAsync(entity);
         }
     }
 }

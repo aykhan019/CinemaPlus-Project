@@ -1,7 +1,148 @@
-﻿@{
+﻿@model TodayMoviesViewModel;
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div style="height:70vh">
 
+<link rel="stylesheet" href="~/css/index.css" />
+<link rel="stylesheet" href="~/css/today.css" />
+<link rel="stylesheet" href="~/css/schedule.css" /> 
+
+
+<div class="tabs filter" id="repertuar">
+    <div class="tab_header">
+        <a href="#" class="active" id="today_list" rel="today">TODAY</a>
+        <a href="#" id="schedule_list" rel="schedule">SCHEDULE</a>
+        <a href="#" id="soon_list" rel="soon">SOON</a>
+    </div>
+
+    <div class="tab_body">
+        <div class="tab today_list" style="display: block">
+            <div class="filter_block mobile_hide">
+                <div class="mobile_hide">
+                    <select id="cinemaFilter" class="mobile_hide custom_select">
+                        <option class="option" value="All Cinemas" disabled selected hidden>Cinema</option>
+                        <option class="option" value="All Cinemas">All Cinemas</option>
+                        @if (Model.Theatres != null)
+                        {
+                            @foreach (var theatre in Model.Theatres)
+                            {
+                                <option class="option" value="@theatre.Id">@theatre.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="mobile_hide">
+                    <select id="languageFilter" class="mobile_hide custom_select">
+                        <option value="All Languages" disabled selected hidden>Language</option>
+                        <option value="All Languages">All Language</option>
+                        @if (Model.Languages != null)
+                        {
+                            @foreach (var language in Model.Languages)
+                            {
+                                <option class="option" value="@language">@language</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="movie_english mobile_hide">
+                    <a href="#" class="mobile_hide" id="english-link">Movies in English</a>
+                </div>
+                <div class="clr"></div>
+            </div>
+
+            <div class="movies-container">
+                <div class="spinner-container" id="movies-spinner">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+
+                <div id="movies">
+                   
+                </div>
+            </div>
+        </div>
+
+        <div class="tab schedule_list" style="display: none">
+            <div class="filter_block">
+                <div class="date_filter">
+                    <a href="#"
+                       class="active"
+                       id="today-btn"
+                       data-value="@Model.SessionDates.ElementAt(0).ToString("dd.MM.yyyy")"
+                       date-text="Today">Today</a>
+                    <a href="#"
+                       id="tomorrow-btn"
+                       data-value="@Model.SessionDates.ElementAt(1).ToString("dd.MM.yyyy")"
+                       date-text="Tomorrow">Tomorrow</a>
+
+                    <select class="home_date_sessions">
+                        @if (Model.SessionDates != null)
+                        {
+                            foreach (var sessionDate in Model.SessionDates)
+                            {
+                                var dateString = sessionDate.ToString("dd.MM.yyyy");
+                                <option value="@dateString" data-value="@dateString">
+                                    @dateString
+                                </option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="mobile_hide">
+                    <select id="sessionsCinemaFilter" class="mobile_hide custom_select">
+                        <option class="option" value="All Cinemas" disabled selected hidden>Cinema</option>
+                        <option class="option" value="All Cinemas">All Cinemas</option>
+                        @if (Model.Theatres != null)
+                        {
+                            @foreach (var theatre in Model.Theatres)
+                            {
+                                <option class="option" value="@theatre.Id">@theatre.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="mobile_hide">
+                    <select id="sessionsLanguageFilter" class="mobile_hide custom_select">
+                        <option value="All Languages" disabled selected hidden>Language</option>
+                        <option value="All Languages">All Language</option>
+                        @if (Model.Languages != null)
+                        {
+                            @foreach (var language in Model.Languages)
+                            {
+                                <option class="option" value="@language">@language</option>
+                            }
+                        }
+                    </select>
+                </div>
+            </div>
+
+            <div id="sessions">
+                <div class="spinner-container" id="sessions-spinner">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+
+                <div id="sessions-current-date" style="display: none">
+                    <p></p>
+                </div>
+
+                <div class="text" id="no_sessions" style="display: none; padding: 30px 5px;">
+                    <p>Sorry, we couldn't find any session matching your criteria. Please refine your search or check back later for updates.</p>
+                </div>
+
+                <table id="sessions-table" class="sessions_table container">
+                </table>
+            </div>
+        </div>
+
+        <div class="tab soon_list" style="display: none; text-align: center; padding: 40px 0px;">Soon</div>
+    </div>
 </div>
+
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/functions.js"></script>
+<script src="~/js/today.js"></script>
+<script src="~/js/schedule.js"></script>
