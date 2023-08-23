@@ -13,5 +13,14 @@
         public const string SessionAPI = "/api/Session";
 
         public const string GetAllSessions = "GetAllSessions";
+
+        public const string TheatreAPI = "/api/Theatre";
+
+        public const string GetAllTheatres = "GetAllTheatres";
+
+        public const string HallAPI = "/api/Hall";
+
+        public const string GetAllHalls = "GetAllHalls";
+
     }
 }

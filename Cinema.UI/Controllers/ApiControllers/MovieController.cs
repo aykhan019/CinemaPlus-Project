@@ -43,7 +43,7 @@ namespace Cinema.UI.Controllers.ApiControllers
                     return Ok(movies);
                 }
 
-                return NotFound();
+                return NoContent();
             }
             catch (Exception ex)
             {

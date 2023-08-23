@@ -1,7 +1,4 @@
-﻿
-
-
-body {
+﻿body {
     display: flex;
     flex-direction: column;
     padding-top: 115px;
@@ -68,7 +65,6 @@ a {
     .link-container:hover {
         color: black;
         transition: 0.5s;
-        cursor: pointer;
     }
 
 .myNav-right-down {
@@ -99,6 +95,10 @@ a {
     margin-left: 30px;
 }
 
+.ml-3-1{
+    margin-left: 42px;
+}
+
 .menu-con:hover {
     background-color: var(--main-color);
     transition: 0.5s;
@@ -113,6 +113,14 @@ a {
     flex-basis: 60%;
 }
 
+.menu-con a {
+    color: var(--second-color) !important;
+}
+
+.hamDiv a{
+    color: var(--second-color) !important;
+}
+
 .logoImg {
     width: 200px;
 }
@@ -121,6 +129,10 @@ a {
     display: none;
     background-color: var(--main-color);
 }
+
+    .hamburger-menu * {
+        display: none;
+    }
 
     .hamburger-menu:hover {
         cursor: pointer;
@@ -141,8 +153,12 @@ a {
     }
 
 .hamburger-dropdown {
-    opacity: 0;
+    display: none;
     height: 0;
+}
+
+.hamDiv {
+    visibility: hidden;
 }
 
 .display {
@@ -204,10 +220,10 @@ a {
 }
 
 .footer-icon-rectangle {
-    width:30px;
+    width: 30px;
     height: 30px;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     border: 1px solid white;
     color: white;
@@ -248,10 +264,6 @@ a {
 }
 
 @media (max-width:1200px) {
-     
-    main{
-        margin-top: 40px;
-    }
 
     body {
         padding-top: 155px;
@@ -322,11 +334,19 @@ a {
         padding: 20px;
     }
 
+        .hamburger-menu * {
+            display: block;
+        }
 
-    body {
-        padding-top: 200px;
+    .hamburger-dropdown {
+        display: block;
+    }
+
+    #main-body {
+        margin-top: 100px;
     }
 }
+
 
 @media (max-width:500px) {
     .footer-left {

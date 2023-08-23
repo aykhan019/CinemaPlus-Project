@@ -32,3 +32,9 @@ async function makeAjaxRequest(url) {
         });
     });
 }
+
+function getNoMovieResultHtml() {
+    return ` <div class="text" id="no_sessions" style="display: block; padding: 30px 5px;">
+		        <p>Sorry, we couldn't find any movies matching your criteria. Please refine your search or check back later for updates.</p>
+	         </div>`;    
+}

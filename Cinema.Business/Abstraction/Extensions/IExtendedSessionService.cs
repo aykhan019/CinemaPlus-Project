@@ -8,5 +8,6 @@ namespace Cinema.Business.Abstraction.Extensions
 {
     public interface IExtendedSessionService : ISessionService
     {
+        Task AdjustSessionDatesToNextWeekAsync();
     }
 }

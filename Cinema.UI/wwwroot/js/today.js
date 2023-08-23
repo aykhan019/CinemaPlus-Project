@@ -33,11 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-function showSpinner() {
+function showMoviesSpinner() {
     document.getElementById("movies-spinner").style.display = 'block';
 }
 
-function hideSpinner() {
+function hideMoviesSpinner() {
     document.getElementById("movies-spinner").style.display = 'none';
 }
 
@@ -64,6 +64,7 @@ function distinctMoviesByMovieId(movies) {
 
 var AllCinemas = "All Cinemas";
 var AllLanguages = "All Languages";
+var SpecialLanguage = "English";
 
 function getCinemaFilteredSessions(sessions, value) {
     if (value === AllCinemas) {
@@ -82,17 +83,35 @@ function getLanguageFilteredMovies(movies, value) {
     }
 
     // value is language.Name here
-    return movies.filter(function (movie) {
-        return movie.language.name === value;
+    var filteredMovies = movies.filter(function (movie) {
+        return movie.languages.some(function (language) {
+            return language.name === value;
+        });
     });
-}
 
+    // Rearrange the languages array for each filtered movie
+    filteredMovies.forEach(function (movie) {
+        const selectedLanguage = movie.languages.find(function (language) {
+            return language.name === value;
+        });
+
+        if (selectedLanguage) {
+            const otherLanguages = movie.languages.filter(function (language) {
+                return language.name !== value;
+            });
+
+            movie.languages = [selectedLanguage, ...otherLanguages];
+        }
+    });
+
+    return filteredMovies;
+}
 
 var cinemaSelectElement = document.getElementById("cinemaFilter");
 var languageSelectElement = document.getElementById("languageFilter");
 async function handleChange() {
-    clearMoviesContainer();
-    showSpinner();
+    clearMoviesContainer(); 
+    showMoviesSpinner();
 
     // Get the selected option's value
     var selectedCinema = cinemaSelectElement.value;
@@ -118,15 +137,13 @@ async function handleChange() {
 
     var languageFilteredMovies = getLanguageFilteredMovies(filteredMovies, selectedLanguage);
 
-    var distinctedMovies = distinctMoviesByMovieId(filteredMovies);
+    var distinctedMovies = distinctMoviesByMovieId(languageFilteredMovies);
 
     var dateFilteredMovies = filterMoviesByDateNewToOld(distinctedMovies);
 
-    console.log(dateFilteredMovies.length);
-
     addMoviesToView(dateFilteredMovies);
 
-    hideSpinner();
+    hideMoviesSpinner();
 }
 
 cinemaSelectElement.addEventListener("change", handleChange);
@@ -136,6 +153,18 @@ languageSelectElement.addEventListener("change", handleChange);
 const englishLink = document.getElementById("english-link");
 let isBlue = false; // Track the color state
 
+// Add an event listener to the languageSelectElement
+languageSelectElement.addEventListener("change", function () {
+    // Toggle the color of the englishLink
+    if (languageSelectElement.value === SpecialLanguage) {
+        englishLink.style.backgroundColor = "var(--third-color)"; // Change to default color
+        englishLink.style.color = "var(--second-color)"; // Back to default color
+    } else {
+        englishLink.style.backgroundColor = "var(--second-color)"; // Back to default color
+        englishLink.style.color = "var(--main-text-color)"; // Back to default color
+    }
+});
+
 // Add a click event listener to change the color on click
 englishLink.addEventListener("click", function (event) {
     event.preventDefault(); // Prevent the link from navigating (since you're using "#")
@@ -144,9 +173,13 @@ englishLink.addEventListener("click", function (event) {
     if (isBlue) {
         this.style.backgroundColor = "var(--second-color)"; // Back to default color
         this.style.color = "var(--main-text-color)"; // Back to default color
+        languageSelectElement.value = AllLanguages;
+        handleChange();
     } else {
         this.style.backgroundColor = "var(--third-color)"; // Change to blue
         this.style.color = "var(--second-color)"; // Back to default color
+        languageSelectElement.value = SpecialLanguage;
+        handleChange();
     }
 
     isBlue = !isBlue; // Toggle the color state
@@ -196,8 +229,11 @@ function createFormatHtml(imageUrl, tooltip) {
         return "";
 
     const html = `
-      <div class='movie-format'>
-        <span><b>${tooltip}</b></span>
+      <div class='movie-format'>    
+        <span>
+            <b></b>
+            ${tooltip}
+        </span>
         <img src="${imageUrl}" alt="#">
       </div>
     `;
@@ -205,20 +241,31 @@ function createFormatHtml(imageUrl, tooltip) {
 }
 
 function getMovieFormatsHtml(movie, maxCount = 0) {
-    const formats = [];
+    var formats = [];
 
-    movie.languages.forEach((language) => {
-        const format = createFormatHtml(
-            language.flagUrl,
-            `Movie Language : ${language.name}`
-        );
-        formats.push(format);
-    });
+    if (movie.languages != null) {
+        movie.languages.forEach((language) => {
+            const format = createFormatHtml(
+                language.flagUrl,
+                `Movie Language : ${language.name}`
+            );
+            formats.push(format);
+        });
+    }
 
-    movie.subtitles.forEach((subtitle) => {
-        const format = createFormatHtml(subtitle.imageUrl, `Movie Subtitle`);
-        formats.push(format);
-    });
+    if (movie.subtitles != null) {
+        movie.subtitles.forEach((subtitle) => {
+            const format = createFormatHtml(subtitle.imageUrl, `Movie Subtitle`);
+            formats.push(format);
+        });
+    }
+
+    formats = formats.filter(f => f != '');
+
+    if (formats.length === 0) {
+        var format = createFormatHtml("https://media.aykhan.net/assets/images/step-it-academy/diploma-project/flags/512/en.png", "Movie Subtitle : English")
+        formats.add(format);
+    }
 
     // Get only the first 5 formats
     var selectedFormats = [];
@@ -247,7 +294,7 @@ function createMovieHtml(movie) {
     <div class='movie-card'>
         <div class='movie-title'>
             <a href="/home/movies?id=${movie.id}">
-                ${movie.id}
+                ${truncatedTitle}
             </a>
         </div>
         <div class="movie-details">
@@ -276,13 +323,19 @@ function createMovieHtml(movie) {
 async function addMoviesToView(movies) {
     if (movies != null) {
         if (moviesContainer != null) {
-            var fullHtml = "";
-            for (let i = 0; i < movies.length; i++) {
-                const movie = movies[i];
-                var html = createMovieHtml(movie);
-                fullHtml += html;
+            if (movies.length > 0) {
+                var fullHtml = "";
+                for (let i = 0; i < movies.length; i++) {
+                    const movie = movies[i];
+                    var html = createMovieHtml(movie);
+                    fullHtml += html;
+                }
+                moviesContainer.innerHTML = fullHtml;
             }
-            moviesContainer.innerHTML = fullHtml;
+            else {
+                var noResultHtml = getNoMovieResultHtml();
+                moviesContainer.innerHTML = noResultHtml;
+            }
         }
     }
 }
@@ -290,9 +343,9 @@ async function addMoviesToView(movies) {
 async function initializeApp() {
     try {
         ALL_MOVIES = await fetchMovies();
-        showSpinner();
+        showMoviesSpinner();
         addMoviesToView(ALL_MOVIES);
-        hideSpinner();
+        hideMoviesSpinner();
     } catch (error) {
         console.error("Error initializing the app:", error);
     }

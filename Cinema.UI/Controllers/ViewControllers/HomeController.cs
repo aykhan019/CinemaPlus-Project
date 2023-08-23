@@ -13,14 +13,20 @@ namespace Cinema.UI.Controllers.ViewControllers
 
         private readonly IExtendedLanguageService _languageService;
 
-        public HomeController(IExtendedTheatreService theatreService, IExtendedLanguageService languageService)
+        private readonly IExtendedSessionService _sessionService;
+
+        public HomeController(IExtendedTheatreService theatreService, IExtendedLanguageService languageService, IExtendedSessionService sessionService)
         {
             _theatreService = theatreService;
             _languageService = languageService;
+            _sessionService = sessionService;
         }
 
         public async Task<IActionResult> Index()
         {
+            // Updating session dates so that their startTime Date will appear to be within the 7 days
+            await _sessionService.AdjustSessionDatesToNextWeekAsync();
+
             var viewModel = new TodayMoviesViewModel()
             {
                 Theatres = (await _theatreService.GetAllAsync()).ToList(),
@@ -28,6 +34,11 @@ namespace Cinema.UI.Controllers.ViewControllers
                  .Where(l => l.Name != ApplicationConstants.NotApplicable)
                  .Select(l => l.Name)
                  .Distinct()
+                 .ToList(),
+                SessionDates = (await _sessionService.GetAllAsync())
+                 .Select(s => s.StartTime.Date) // Extract the date part of the StartTime
+                 .Distinct()
+                 .OrderBy(s => s.Day)
                  .ToList()
             };
             return View(viewModel);

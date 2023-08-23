@@ -21,7 +21,8 @@
             <div class="filter_block mobile_hide">
                 <div class="mobile_hide">
                     <select id="cinemaFilter" class="mobile_hide custom_select">
-                        <option class="option" value="All Cinemas">Cinema</option>
+                        <option class="option" value="All Cinemas" disabled selected hidden>Cinema</option>
+                        <option class="option" value="All Cinemas">All Cinemas</option>
                         @if (Model.Theatres != null)
                         {
                             @foreach (var theatre in Model.Theatres)
@@ -33,7 +34,8 @@
                 </div>
                 <div class="mobile_hide">
                     <select id="languageFilter" class="mobile_hide custom_select">
-                        <option value="All Languages">Language</option>
+                        <option value="All Languages" disabled selected hidden>Language</option>
+                        <option value="All Languages">All Language</option>
                         @if (Model.Languages != null)
                         {
                             @foreach (var language in Model.Languages)
@@ -68,77 +70,50 @@
                     <a href="#"
                        class="active"
                        id="today-btn"
-                       data-value="19.08.2023"
+                       data-value="@Model.SessionDates.ElementAt(0).ToString("dd.MM.yyyy")"
                        date-text="Today">Today</a>
                     <a href="#"
                        id="tomorrow-btn"
-                       data-value="20.08.2023"
+                       data-value="@Model.SessionDates.ElementAt(1).ToString("dd.MM.yyyy")"
                        date-text="Tomorrow">Tomorrow</a>
 
                     <select class="home_date_sessions">
-                        <option value="19.08.2023" data-value="19.08.2023">
-                            19.08.2023
-                        </option>
-                        <option value="20.08.2023" data-value="20.08.2023">
-                            20.08.2023
-                        </option>
-                        <option value="21.08.2023" data-value="21.08.2023">
-                            21.08.2023
-                        </option>
-                        <option value="22.08.2023" data-value="22.08.2023">
-                            22.08.2023
-                        </option>
-                        <option value="23.08.2023" data-value="23.08.2023">
-                            23.08.2023
-                        </option>
-                        <option value="24.08.2023" data-value="24.08.2023">
-                            24.08.2023
-                        </option>
-                        <option value="24.08.2023" data-value="25.08.2023">
-                            25.08.2023
-                        </option>
+                        @if (Model.SessionDates != null)
+                        {
+                            foreach (var sessionDate in Model.SessionDates)
+                            {
+                                var dateString = sessionDate.ToString("dd.MM.yyyy");
+                                <option value="@dateString" data-value="@dateString">
+                                    @dateString
+                                </option>
+                            }
+                        }
                     </select>
                 </div>
-                <div class="cinema_filter" id="sesscf">
-                    <select name="home_sesx_cinema">
-                        <option value="all">Cinema</option>
-                        <option value="28Mall" data-cid="1029">28 Mall</option>
-                        <option value="GanjlikMall" data-cid="1079">
-                            Ganjlik Mall
-                        </option>
-                        <option value="DenizMall" data-cid="1768695">
-                            Deniz Mall
-                        </option>
-                        <option value="AzerbaijanC." data-cid="1083">
-                            Azerbaijan Cinema
-                        </option>
-                        <option value="AmburanMall" data-cid="1087">
-                            Amburan Mall
-                        </option>
-                        <option value="Sumgayit" data-cid="1640449">Sumgayit</option>
-
-                        <option value="KhamsaPark" data-cid="1095">
-                            Khamsa Park (Ganja)
-                        </option>
-                        <option value="GanjaMall" data-cid="629922">
-                            Ganja Mall (Ganja)
-                        </option>
-                        <option value="Nakhchivan" data-cid="1464911">
-                            Nakhchivan
-                        </option>
-                        <!--<option value="AygunCity" data-cid="1091">Aygun Mall</option> -->
-                        <option value="Shamakhi" data-cid="1768759">Shamakhi</option>
+                <div class="mobile_hide">
+                    <select id="sessionsCinemaFilter" class="mobile_hide custom_select">
+                        <option class="option" value="All Cinemas" disabled selected hidden>Cinema</option>
+                        <option class="option" value="All Cinemas">All Cinemas</option>
+                        @if (Model.Theatres != null)
+                        {
+                            @foreach (var theatre in Model.Theatres)
+                            {
+                                <option class="option" value="@theatre.Id">@theatre.Name</option>
+                            }
+                        }
                     </select>
-                    <div class="clr"></div>
                 </div>
-                <div>
-                    <select name="sess_lang_sorter" id="sess_lang_sorter">
-                        <option value="0">Language</option>
-                        <option value="0">All languages</option>
-                        <option value="1800">Azərbaycanca</option>
-                        <option value="1798">На русском</option>
-                        <option value="1797">In English</option>
-                        <option value="1799">Türkçe</option>
+                <div class="mobile_hide">
+                    <select id="sessionsLanguageFilter" class="mobile_hide custom_select">
+                        <option value="All Languages" disabled selected hidden>Language</option>
+                        <option value="All Languages">All Language</option>
+                        @if (Model.Languages != null)
+                        {
+                            @foreach (var language in Model.Languages)
+                            {
+                                <option class="option" value="@language">@language</option>
+                            }
+                        }
                     </select>
                 </div>
             </div>
@@ -159,7 +134,7 @@
             </div>
         </div>
 
-        <div class="tab soon_list" style="display: none">Soon</div>
+        <div class="tab soon_list" style="display: none; text-align: center; padding: 40px 0px;">Soon</div>
     </div>
 </div>
 

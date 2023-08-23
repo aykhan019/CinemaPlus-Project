@@ -6,6 +6,6 @@ namespace Cinema.UI.Models
     {
         public List<Theatre>? Theatres { get; set; }
         public List<string>? Languages { get; set; }
+        public List<DateTime>? SessionDates { get; set; }
     }
 }
-    

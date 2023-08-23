@@ -15,8 +15,31 @@ namespace Cinema.Business.Concrete
 
         public async Task AddAsync(Session entity)
         {
-          await _sessionDal.AddAsync(entity);
+            await _sessionDal.AddAsync(entity);
         }
+
+        public async Task AdjustSessionDatesToNextWeekAsync()
+        {
+            var sessions = await _sessionDal.GetListAsync();
+
+            if (sessions != null && sessions.Count() > 0)
+            {
+                var oldestSession = sessions.OrderByDescending(s => s.StartTime).FirstOrDefault()!;
+
+                var firstAddedSessionDate = new DateTime(2023, 8, 23);
+
+                if (oldestSession.StartTime != firstAddedSessionDate)
+                {
+                    int dayDifference = (DateTime.Now - firstAddedSessionDate).Days;
+
+                    foreach (var session in sessions)
+                    {
+                        session.StartTime = session.StartTime.AddDays(dayDifference);
+                        await _sessionDal.UpdateAsync(session);
+                    }
+                }
+            }
+        }   
 
         public async Task DeleteAsync(Session entity)
         {

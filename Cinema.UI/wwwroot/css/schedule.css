@@ -42,16 +42,11 @@
     border-bottom-left-radius: 0 !important;
 }
 
-.spinner-container {
+/*.spinner-container {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-#sessions-spinner {
-    color: var(--main-color);
-    margin: 40px 0px;
-}
+}*/
 
 #sessions-current-date p {
     color: var(--main-color);
@@ -1147,10 +1142,6 @@ a {
     clear: both;
 }
 
-header {
-    background: #fff url(../images/header_bg2.png) repeat-y 45% 0%;
-}
-
 .header_top {
     padding: 17px 0;
 }
@@ -1718,7 +1709,7 @@ aside#aside_block {
     .zone_input > input[type="text"] {
         border: none;
         width: 100%;
-        background: url("../images/places_icon.svg") no-repeat right;
+        background: url(/assets/images/places_icon.svg) no-repeat right;
     }
 
 .sessions-movie-formats {
@@ -2435,7 +2426,6 @@ aside#aside_block {
 }
 
 footer {
-    background: url(../images/prices_bg.jpg) no-repeat center center;
     background-size: cover;
     padding: 10px 0 15px 0;
 }
@@ -3397,7 +3387,7 @@ a[href^="tel"] {
                 font-size: 14px;
                 line-height: 48px;
                 text-align: left;
-                background: #fff url(../images/places_icon.svg) no-repeat 90% 50%;
+                background: #fff url(/assets/images/places_icon.svg) no-repeat 90% 50%;
             }
 
 .places.active {
@@ -3836,7 +3826,7 @@ g {
     font-size: 16px;
     font-size: 14px;
     padding: 15px;
-    background: #fff url(../images/places_icon.svg) no-repeat 100% 50%;
+    background: #fff url(/assets/images/places_icon.svg) no-repeat 100% 50%;
     float: right;
 }
 
