@@ -221,8 +221,8 @@ async function fetchMovies() {
     }
 }
 
-function createFormatHtml(imageUrl, tooltip) {
-    if (
+function createFormatHtml(imageUrl, tooltip, check = true) {
+    if (check &&
         imageUrl ===
         "https://media.aykhan.net/assets/images/step-it-academy/diploma-project/flags/512/not-found.png"
     )
@@ -240,14 +240,15 @@ function createFormatHtml(imageUrl, tooltip) {
     return html;
 }
 
-function getMovieFormatsHtml(movie, maxCount = 0) {
+function getMovieFormatsHtml(movie, maxCount = 0, check = true) {
     var formats = [];
 
     if (movie.languages != null) {
         movie.languages.forEach((language) => {
             const format = createFormatHtml(
                 language.flagUrl,
-                `Movie Language : ${language.name}`
+                `Movie Language : ${language.name}`, 
+                check
             );
             formats.push(format);
         });
@@ -255,7 +256,7 @@ function getMovieFormatsHtml(movie, maxCount = 0) {
 
     if (movie.subtitles != null) {
         movie.subtitles.forEach((subtitle) => {
-            const format = createFormatHtml(subtitle.imageUrl, `Movie Subtitle`);
+            const format = createFormatHtml(subtitle.imageUrl, `Movie Subtitle`, check);
             formats.push(format);
         });
     }
@@ -263,8 +264,8 @@ function getMovieFormatsHtml(movie, maxCount = 0) {
     formats = formats.filter(f => f != '');
 
     if (formats.length === 0) {
-        var format = createFormatHtml("https://media.aykhan.net/assets/images/step-it-academy/diploma-project/flags/512/en.png", "Movie Subtitle : English")
-        formats.add(format);
+        var format = createFormatHtml("https://media.aykhan.net/assets/images/step-it-academy/diploma-project/flags/512/en.png", "Movie Subtitle : English", check)
+        formats.push(format);
     }
 
     // Get only the first 5 formats

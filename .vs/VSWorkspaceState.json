@@ -7,8 +7,9 @@
     "\\Cinema.UI\\Views",
     "\\Cinema.UI\\Views\\Home",
     "\\Cinema.UI\\wwwroot",
-    "\\Cinema.UI\\wwwroot\\css"
+    "\\Cinema.UI\\wwwroot\\css",
+    "\\Cinema.UI\\wwwroot\\js"
   ],
-  "SelectedNode": "\\CinemaPlus.sln",
+  "SelectedNode": "\\Cinema.UI\\wwwroot\\js\\schedule.js",
   "PreviewInSolutionExplorer": false
 }

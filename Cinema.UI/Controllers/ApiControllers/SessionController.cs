@@ -18,13 +18,15 @@ namespace Cinema.UI.Controllers.ApiControllers
 
         private readonly IExtendedLanguageService _languageService;
 
+        private readonly IExtendedSubtitleService _subtitleService;
 
-        public SessionController(IExtendedSessionService sessionService, IExtendedHallService hallService, IExtendedMovieService movieService, IExtendedLanguageService languageService)
+        public SessionController(IExtendedSessionService sessionService, IExtendedHallService hallService, IExtendedMovieService movieService, IExtendedLanguageService languageService, IExtendedSubtitleService subtitleService)
         {
             _sessionService = sessionService;
             _hallService = hallService;
             _movieService = movieService;
             _languageService = languageService;
+            _subtitleService = subtitleService;
         }
 
         [HttpGet(Routes.GetAllSessions)]
@@ -45,6 +47,8 @@ namespace Cinema.UI.Controllers.ApiControllers
                         session.Movie = await _movieService.GetByIdAsync(session.MovieId);
 
                         session.Movie.Languages = (await _languageService.GetMovieLanguages(session.Movie.Id)).ToList();
+
+                        session.Movie.Subtitles = (await _subtitleService.GetMovieSubtitles(session.Movie.Id)).ToList();
                     });
 
                     return Ok(list);

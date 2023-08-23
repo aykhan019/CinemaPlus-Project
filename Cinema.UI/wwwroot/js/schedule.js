@@ -150,9 +150,27 @@ const SESSION_TITLE_MAX_LENGTH = 35;
 function createSessionsRowHtml(session, maxFormatCount) {
     var hall = HALLS.find((h) => h.id === session.hallId);
     var theatre = THEATRES.find((t) => t.id === hall?.theatreId);
-    var movie = MOVIES.find((m) => m.id === session?.movieId);
+    var movie;
+    if (session.movie != null) {
+        movie = session.movie;
+    }
+    else {
+        movie = MOVIES.find((m) => m.id === session?.movieId);
 
-    var formats = getMovieFormatsHtml(movie, maxFormatCount);
+        const selectedLanguage = movie.languages.find(function (language) {
+            return language.name === selectedSessionLanguage;
+        });
+
+        if (selectedLanguage) {
+            const otherLanguages = movie.languages.filter(function (language) {
+                return language.name !== selectedSessionLanguage;
+            });
+
+            movie.languages = [selectedLanguage, ...otherLanguages];
+        }
+    }
+
+    var formats = getMovieFormatsHtml(movie, maxFormatCount, false);
 
     return `
     <tr style="display: table-row;">
@@ -206,7 +224,7 @@ function formatDate(inputDate) {
 
 async function addSessionsToView(date) {
     if (SESSIONS === null) {
-        SESSIONS = await getSessions();
+        SESSIONS = await makeAjaxRequest('/api/Session/GetAllSessions');
     }
 
     // Convert dateValue to a JavaScript Date object
@@ -233,7 +251,7 @@ async function addSessionsToView(date) {
     });
 
     if (selectedSessionLanguage != AllLanguages) {
-        languageFilteredSessions.map(function (session) {
+        languageFilteredSessions = languageFilteredSessions.map(function (session) {
             const selectedLanguage = session.movie.languages.find(function (language) {
                 return language.name === selectedSessionLanguage;
             });
@@ -255,14 +273,23 @@ async function addSessionsToView(date) {
     addTableHeadToView();
     addSessionsTableBody();
 
-    var allHtml = "";
-    for (let i = 0; i < resultSessions.length; i++) {
-        const mySession = resultSessions[i];
-        var html = createSessionsRowHtml(mySession, MAX_SESSION_FORMAT_COUNT);
-        allHtml += html;
-    }
+
+    document.getElementById("sessions-table").style.display = 'block';
+    document.getElementById("no_sessions").style.display = 'none';
     var sessionsBody = document.getElementById("sessions-body");
-    sessionsBody.innerHTML = allHtml;
+    if (resultSessions.length > 0) {
+        var allHtml = "";
+        for (let i = 0; i < resultSessions.length; i++) {
+            const mySession = resultSessions[i];
+            var html = createSessionsRowHtml(mySession, MAX_SESSION_FORMAT_COUNT);
+            allHtml += html;
+        }
+        sessionsBody.innerHTML = allHtml;
+    }
+    else {
+        document.getElementById("sessions-table").style.display = 'none';
+        document.getElementById("no_sessions").style.display = 'block';
+    }
 }
 
 function sortSessionsByDate(mysessions) {

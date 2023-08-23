@@ -56,8 +56,11 @@
     padding: 20px;
 }
 
+#sessions{
+    padding-bottom: 50px; 
+    overflow-y: hidden;
+}
 /* Seperator */
-
 h1,
 h2,
 h3,
