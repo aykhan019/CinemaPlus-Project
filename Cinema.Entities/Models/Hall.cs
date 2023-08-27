@@ -26,5 +26,10 @@ namespace Cinema.Entities.Models
         /// Gets or sets the list of seats in the hall.
         /// </summary>
         public virtual List<Seat>? Seats { get; set; }
+
+        public Hall()
+        {
+            Seats = new List<Seat>();
+        }
     }
 }

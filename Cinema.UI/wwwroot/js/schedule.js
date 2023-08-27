@@ -192,13 +192,179 @@ function createSessionsRowHtml(session, maxFormatCount) {
       <td>
         ${movie.price} AZN
       </td>
-      <td>
-        <div class="zone_input">
-            <input onclick=alert("HI") type="text" disabled class="zone_main_input" placeholder="Places">
+      <td> 
+        <div class="zone_input" onclick="showPlaces('${session.id}')">
+            <input type="text" disabled class="zone_main_input" placeholder="Places">
         </div>
       </td>
     </tr>
   `;
+}
+
+
+function getformattedDateTime(datetimeString) {
+    const options = {
+        year: 'numeric',
+        month: '2-digit',
+        day: '2-digit',
+        hour: '2-digit',
+        minute: '2-digit'
+    };
+
+    const formattedDatetime = new Date(datetimeString).toLocaleString('en-US', options);
+    return formattedDatetime.replace(',', ''); // Remove the comma from the default formatting
+
+}
+
+
+
+async function createPlaceHtml(sessionId) {
+    let layoutBody = document.getElementById("layout-body");
+    layoutBody.insertAdjacentHTML('afterbegin', `<div class="spinner-container middle-spinner" id="movies-spinner">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                    <h4>Opening Places</h4>
+                </div>`);
+    let session = await makeAjaxRequest(`/api/Session/GetSessionById/${sessionId}`);
+    let spinner = document.getElementById("movies-spinner");
+    spinner.remove();
+
+    var formats = getMovieFormatsHtml(session.movie, 3);
+
+
+    let content = `<div id="place-container" class="place-container">
+		<div class="place-inner-container">
+		<div onclick='closePlaces()' class="places-close-btn">
+			<i class="fa-regular fa-circle-xmark"></i>
+		</div>
+			<div class="place-inner-up">
+				<p>${session.movie.title}</p>
+				<p>${getformattedDateTime(session.startTime)}</p>
+				<p>${session.hall.name}</p>
+        <div class='session-formats-container'>
+         ${formats}
+        </div>
+			</div>
+
+			<div class="place-inner-middle">
+				<div class="seats-cont">`
+
+
+    let seatCount = 0;
+    let rowCount = Math.ceil(session.hall.seats.length / 14);
+
+    for (var i = 0; i < rowCount; i++) {
+        content += `<div class="seat-row">
+						<div class="seat-row-number">
+							<h4>${i + 1}</h4>
+						</div>`;
+        content += `<div style="flex-basis:90%;">
+							<div class="seat-list">`;
+        for (var k = 0; k < 14; k++) {
+
+            var seatId = session.hall.seats[seatCount].id;
+            if (session.hall.seats[seatCount].isAvailable == true) {
+
+                content += `<a style="background-color:white;"  id="seat-${seatId}"  onclick="selectSeat('${session.movie.price}','${seatId}')">${k + 1}</a>`
+            }
+            else {
+                content += `<a id="seat-${seatId}"  onclick="selectSeat('${session.movie.price}','${seatId}')" style="background-color:black;color:white;">${k + 1}</a>`
+            }
+            seatCount++;
+        }
+
+        content += `</div>
+                        </div>
+						<div class="seat-row-number">
+							<h4>${i + 1}</h4>
+						</div>
+					</div>`;
+    }
+
+    content += `</div>
+                <div class="screen-label">
+					<h4>Screen</h4>
+					<img alt="screen" src="/assets/images/zone_footer.png"/>
+				</div>
+			</div>
+<div class="place-inner-down">
+								<div class="place-inner-down-sec">
+					<div class="seat-info-cont">
+						<div class="seat-info-box"></div>
+						<b>Empty seats</b>
+					</div>
+
+					<div class="seat-info-cont">
+						<div class="seat-info-box" style="background-color:#00acec!important;"></div>
+						<b>Selected seats</b>
+					</div>
+
+					<div class="seat-info-cont">
+						<div class="seat-info-box" style="background-color:black!important;"></div>
+						<b>Full seats</b>
+					</div>
+				</div>
+
+
+				<div class="place-inner-down-sec">
+					<div class="place-inner-down-bottom">
+
+					</div>
+					<div class="place-inner-down-bottom" style="flex-direction:column;">
+						<b style="color:#00b0f0">Total Price:</b>
+						<b id="price-display" style="color:white">AZN</b>
+					</div>
+
+					<div class="place-inner-down-bottom">
+						<a class="confirm-btn">
+							Confirm
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>`;
+    layoutBody.insertAdjacentHTML('afterbegin', content);
+    layoutBody.style.overflow = "hidden";
+}
+
+function showPlaces(sessionId) {
+    createPlaceHtml(sessionId);
+    let placeContainer = document.getElementById("place-container");
+
+    
+}
+
+var totalPrice = 0;
+function closePlaces() {
+    totalPrice = 0;
+    let placeContainer = document.getElementById("place-container");
+    let layoutBody = document.getElementById("layout-body");
+    layoutBody.style.overflow = "auto";
+    placeContainer.remove();
+}
+
+
+function selectSeat(price, seatId) {
+    let seatEl = document.getElementById(`seat-${seatId}`);
+    let priceDisplay = document.getElementById("price-display");
+    if (seatEl.style.backgroundColor != "black") {
+        if (seatEl.style.backgroundColor == "white") {
+            seatEl.style.backgroundColor = "rgb(0, 175, 240)";
+            seatEl.style.color = "white";
+            totalPrice += Number(price);
+            priceDisplay.innerHTML = `${totalPrice} AZN`;
+        }
+        else if (seatEl.style.backgroundColor == "rgb(0, 175, 240)") {
+            seatEl.style.backgroundColor = "white";
+            seatEl.style.color = "black";
+            totalPrice -= Number(price);
+            priceDisplay.innerHTML = `${totalPrice} AZN`;
+
+        }
+    }
+    //console.log(sessionData);
+
 }
 
 const MAX_SESSION_FORMAT_COUNT = 3;

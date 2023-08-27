@@ -1,164 +1,269 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+		  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-          integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Home CinemaPlus</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		  integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		  crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Home CinemaPlus</title>
 
-    <link rel="stylesheet" href="~/css/index.css" />
-    <link rel="stylesheet" href="~/css/layout.css" />
+	<link rel="stylesheet" href="~/css/index.css" />
+	<link rel="stylesheet" href="~/css/layout.css" />
+	<link rel="stylesheet" href="~/css/schedule.css"/>
 </head>
-<body>
+<body id="layout-body" style="position:relative">
 
-    <header>
-        <nav class="myNav">
-            <section class="myNav-left">
-                <img class="logoImg" alt="logo" src="~/assets/images/cpluslogo.svg">
-            </section>
+@*	<div id="place-container" class="place-container">
+		<div class="place-inner-container">
+		<div class="places-close-btn">
+			<i class="fa-regular fa-circle-xmark"></i>
+		</div>
+			<div class="place-inner-up">
+				<p>Oppenheimer</p>
+				<p>26.02.2023</p>
+				<p>Deniz Mall, Pasha Insurance</p>
+			</div>
 
-            <section class="myNav-right">
-                <section class="myNav-right-up">
-                    <div class="link-container ml-3-1">
-                        <a href="/Home/Platinum">Platinum</a>
-                    </div>
-                    <div class="link-container">
-                        <a href="/Home/DolbyAtmos">Dolby Atmos</a>
-                    </div>
-                    <div class="link-container">
-                        <a href="/Home/Services">Services</a>
-                    </div>
-                    <div class="link-container">
-                        <a href="/Home/About">About us</a>
-                    </div>
-                </section>
+			<div class="place-inner-middle">
+				<div class="seats-cont">
+					<div class="seat-row">
+						<div class="seat-row-number">
+							<h4>1</h4>
+						</div>
+						<div style="flex-basis:90%;">
+							<div class="seat-list">
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
+								<a>8</a>
+								<a>9</a>
+								<a>10</a>
+								<a>11</a>
+								<a>12</a>
+								<a>13</a>
+								<a>14</a>
+							</div>
+						</div>
+						<div class="seat-row-number">
+							<h4>1</h4>
+						</div>
+					</div>
+					<div class="seat-row">
+						<div class="seat-row-number">
+							<h4>2</h4>
+						</div>
+						<div style="flex-basis:90%;">
+							<div class="seat-list">
+								<a>1</a>
+								<a>2</a>
+								<a>3</a>
+								<a>4</a>
+								<a>5</a>
+								<a>6</a>
+								<a>7</a>
+								<a>8</a>
+								<a>9</a>
+								<a>10</a>
+								<a>11</a>
+								<a>12</a>
+							</div>
+						</div>
+						<div class="seat-row-number">
+							<h4>2</h4>
+						</div>
+					</div>
+				</div>
+			</div>
 
-                <section class="myNav-right-down">
-                    <div class="menu-con ml-3">
-                        <a href="/Home">Home</a>
-                    </div>
-                    <div class="menu-con">
-                        <a href="/Home/Campaigns">Campaigns</a>
-                    </div>
-                    <div class="menu-con">
-                        <a href="/Home/Tariffs">Tariffs</a>
-                    </div>
-                    <div class="menu-con">
-                        <a href="/Home/CineBonus">CineBonus</a>
-                    </div>
+			<div class="place-inner-down">
+				<div class="place-inner-down-sec">
+					<div class="seat-info-cont">
+						<div class="seat-info-box"></div>
+						<b>Empty seats</b>
+					</div>
 
-                    <div class="my-contact">
-                        <i style="color: white; margin-right: 5px;" class="fa-solid fa-phone"></i>
-                        +99412 499 89 88
-                    </div>
-                </section>
+					<div class="seat-info-cont">
+						<div class="seat-info-box" style="background-color:#00acec!important;"></div>
+						<b>Selected seats</b>
+					</div>
 
-                <section class="hamburger-menu">
-                    <div style="width: 100%;padding: 10px;">
-                        <i style="font-size: 50px;" class="fa-solid fa-bars" id="hamburgerBtn"></i>
-
-                        <div class="hamburger-dropdown" id="hamburgerDropdown">
-                            <div class="hamDiv" style="margin-top: 20px;">
-                                <a href="/Home/Platinum">Platinum</a>
-                            </div>
-
-                            <div class="hamDiv">
-                                <a href="/Home/Campaigns">Campaigns</a>
-                            </div>
-
-                            <div class="hamDiv">
-                                <a href="/Home/Tariffs">Tariffs</a>
-                            </div>
-
-                            <div class="hamDiv">
-                                <a href="/Home/About">About us</a>
-                            </div>
-
-                            <div class="hamDiv">
-                                <a href="/Home/Contacts">Contacts</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </section>
-        </nav>
-    </header>
-
-    <main class="main-body" id="main-body">
-        @RenderBody()
-    </main>
-
-    <footer class="footer">
-        <section class="footer-up">
-            <section class="footer-sec footer-left">
-                <section>
-                    <div class="footer-link-container">
-                        <a>About us</a>
-                    </div>
-                    <div class="footer-link-container">
-                        <a>Services</a>
-                    </div>
-                    <div class="footer-link-container">
-                        <a>Rules</a>
-                    </div>
-                </section>
-
-                <section>
-                    <div class="footer-link-container">
-                        <a>FAQ</a>
-                    </div>
-                    <div class="footer-link-container">
-                        <a>Vacancies</a>
-                    </div>
-                    <div class="footer-link-container">
-                        <a>Contact</a>
-                    </div>
-                </section>
-            </section>
-            <section class="footer-sec footer-middle">
-                <div class="footer-icon-rectangle">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </div>
-
-                <div class="footer-icon-rectangle">
-                    <i class="fa-brands fa-telegram"></i>
-                </div>
-
-                <div class="footer-icon-rectangle">
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-
-                <div class="footer-icon-rectangle">
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </section>
-            <section class="footer-sec footer-right">
-
-                <div style="margin: 10px;">
-                    <img class="apple" src="~/assets/images/appstore.png" alt="appStore">
-                </div>
+					<div class="seat-info-cont">
+						<div class="seat-info-box" style="background-color:black!important;"></div>
+						<b>Full seats</b>
+					</div>
+				</div>
 
 
-                <div style="margin: 10px;">
-                    <img class="google" src="~/assets/images/google.png" alt="google">
-                </div>
-            </section>
-        </section>
+				<div class="place-inner-down-sec">
+					<div class="place-inner-down-bottom">
+
+					</div>
+					<div class="place-inner-down-bottom" style="flex-direction:column;">
+						<b style="color:#00b0f0">Total Price:</b>
+						<b style="color:white">AZN</b>
+					</div>
+
+					<div class="place-inner-down-bottom">
+						<a class="confirm-btn">
+							Confirm
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>*@
+	<header>
+		<nav class="myNav">
+			<section class="myNav-left">
+				<img class="logoImg" alt="logo" src="~/assets/images/cpluslogo.svg">
+			</section>
+
+			<section class="myNav-right">
+				<section class="myNav-right-up">
+					<div class="link-container ml-3-1">
+						<a href="/Home/Platinum">Platinum</a>
+					</div>
+					<div class="link-container">
+						<a href="/Home/DolbyAtmos">Dolby Atmos</a>
+					</div>
+					<div class="link-container">
+						<a href="/Home/Services">Services</a>
+					</div>
+					<div class="link-container">
+						<a href="/Home/About">About us</a>
+					</div>
+				</section>
+
+				<section class="myNav-right-down">
+					<div class="menu-con ml-3">
+						<a href="/Home">Home</a>
+					</div>
+					<div class="menu-con">
+						<a href="/Home/Campaigns">Campaigns</a>
+					</div>
+					<div class="menu-con">
+						<a href="/Home/Tariffs">Tariffs</a>
+					</div>
+					<div class="menu-con">
+						<a href="/Home/CineBonus">CineBonus</a>
+					</div>
+
+					<div class="my-contact">
+						<i style="color: white; margin-right: 5px;" class="fa-solid fa-phone"></i>
+						+99412 499 89 88
+					</div>
+				</section>
+
+				<section class="hamburger-menu">
+					<div style="width: 100%;padding: 10px;">
+						<i style="font-size: 50px;" class="fa-solid fa-bars" id="hamburgerBtn"></i>
+
+						<div class="hamburger-dropdown" id="hamburgerDropdown">
+							<div class="hamDiv" style="margin-top: 20px;">
+								<a href="/Home/Platinum">Platinum</a>
+							</div>
+
+							<div class="hamDiv">
+								<a href="/Home/Campaigns">Campaigns</a>
+							</div>
+
+							<div class="hamDiv">
+								<a href="/Home/Tariffs">Tariffs</a>
+							</div>
+
+							<div class="hamDiv">
+								<a href="/Home/About">About us</a>
+							</div>
+
+							<div class="hamDiv">
+								<a href="/Home/Contacts">Contacts</a>
+							</div>
+						</div>
+					</div>
+				</section>
+			</section>
+		</nav>
+	</header>
+
+	<main class="main-body" id="main-body">
+		@RenderBody()
+	</main>
+
+	<footer class="footer">
+		<section class="footer-up">
+			<section class="footer-sec footer-left">
+				<section>
+					<div class="footer-link-container">
+						<a>About us</a>
+					</div>
+					<div class="footer-link-container">
+						<a>Services</a>
+					</div>
+					<div class="footer-link-container">
+						<a>Rules</a>
+					</div>
+				</section>
+
+				<section>
+					<div class="footer-link-container">
+						<a>FAQ</a>
+					</div>
+					<div class="footer-link-container">
+						<a>Vacancies</a>
+					</div>
+					<div class="footer-link-container">
+						<a>Contact</a>
+					</div>
+				</section>
+			</section>
+			<section class="footer-sec footer-middle">
+				<div class="footer-icon-rectangle">
+					<i class="fa-brands fa-facebook-f"></i>
+				</div>
+
+				<div class="footer-icon-rectangle">
+					<i class="fa-brands fa-telegram"></i>
+				</div>
+
+				<div class="footer-icon-rectangle">
+					<i class="fa-brands fa-youtube"></i>
+				</div>
+
+				<div class="footer-icon-rectangle">
+					<i class="fa-brands fa-instagram"></i>
+				</div>
+			</section>
+			<section class="footer-sec footer-right">
+
+				<div style="margin: 10px;">
+					<img class="apple" src="~/assets/images/appstore.png" alt="appStore">
+				</div>
 
 
-        <section class="footer-down">
-            <h>All rights reserved. &copy CinemaPlus LLC 2012-2023</h>
-            <img style="width:150px" src="~/assets/images/vipclubcinema2.png">
-        </section>
-    </footer>
+				<div style="margin: 10px;">
+					<img class="google" src="~/assets/images/google.png" alt="google">
+				</div>
+			</section>
+		</section>
 
-    <script src="~/js/jquery.min.js"></script>
-    <script src="~/js/functions.js"></script>
-    <script src="~/js/layout.js"></script>
+
+		<section class="footer-down">
+			<h>All rights reserved. &copy CinemaPlus LLC 2012-2023</h>
+			<img style="width:150px" src="~/assets/images/vipclubcinema2.png">
+		</section>
+	</footer>
+
+	<script src="~/js/jquery.min.js"></script>
+	<script src="~/js/functions.js"></script>
+	<script src="~/js/layout.js"></script>
+	<script src="~/js/schedule.js"></script>
 </body>
 </html>

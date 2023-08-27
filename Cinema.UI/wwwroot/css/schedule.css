@@ -1671,6 +1671,10 @@ aside#aside_block {
     display: none;
 }
 
+.zone_main_input{
+    pointer-events:none;
+}
+
 .mobile .zone {
     overflow-y: scroll !important;
 }
@@ -1689,6 +1693,7 @@ aside#aside_block {
 
 .zone_input > input[type="text"] {
     padding-right: 15px;
+
 }
 
 .zone_input {

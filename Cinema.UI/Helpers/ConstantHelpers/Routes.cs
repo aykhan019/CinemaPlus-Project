@@ -22,5 +22,7 @@
 
         public const string GetAllHalls = "GetAllHalls";
 
+        public const string GetSessionById = "GetSessionById/{id}";
+
     }
 }

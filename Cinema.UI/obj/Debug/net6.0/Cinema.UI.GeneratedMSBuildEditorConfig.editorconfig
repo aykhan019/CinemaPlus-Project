@@ -5,57 +5,56 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
-build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Cinema.UI
 build_property.RootNamespace = Cinema.UI
-build_property.ProjectDir = C:\Users\Ayxan\source\repos\CinemaPlus-DiplomaProject1\Cinema.UI\
+build_property.ProjectDir = C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.UI\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Ayxan\source\repos\CinemaPlus-DiplomaProject1\Cinema.UI
+build_property.MSBuildProjectDirectory = C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.UI
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Home/About.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Home/DolbyAtmos.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Home/DolbyAtmos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEb2xieUF0bW9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Home/Index.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Home/Platinum.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Home/Platinum.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQbGF0aW51bS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Home/Privacy.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Home/Services.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Home/Services.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZXJ2aWNlcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Shared/Error.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/_ViewImports.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/_ViewStart.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Ayxan/source/repos/CinemaPlus-DiplomaProject1/Cinema.UI/Views/Shared/_Layout.cshtml]
+[C:/Users/eliah/Desktop/Movie/CinemaPlus-Project/Cinema.UI/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mkxrwnt3er

@@ -41,5 +41,7 @@ namespace Cinema.Entities.Models
         /// Gets or sets the list of tickets associated with the session.
         /// </summary>
         public virtual List<Ticket>? Tickets { get; set; }
+
+        
     }
 }

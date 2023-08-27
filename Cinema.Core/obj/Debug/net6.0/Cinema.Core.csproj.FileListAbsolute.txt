@@ -54,3 +54,17 @@ C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject1\Cinema.Core\obj\Debug\net
 C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject1\Cinema.Core\obj\Debug\net6.0\Cinema.Core.pdb
 C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject1\Cinema.Core\obj\Debug\net6.0\Cinema.Core.genruntimeconfig.cache
 C:\Users\Ayxan\Source\Repos\CinemaPlus-DiplomaProject1\Cinema.Core\obj\Debug\net6.0\ref\Cinema.Core.dll
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\bin\Debug\net6.0\Cinema.Core.deps.json
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\bin\Debug\net6.0\Cinema.Core.runtimeconfig.json
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\bin\Debug\net6.0\Cinema.Core.dll
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\bin\Debug\net6.0\Cinema.Core.pdb
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\Cinema.Core.csproj.AssemblyReference.cache
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\Cinema.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\Cinema.Core.AssemblyInfoInputs.cache
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\Cinema.Core.AssemblyInfo.cs
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\Cinema.Core.csproj.CoreCompileInputs.cache
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\Cinema.Core.dll
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\refint\Cinema.Core.dll
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\Cinema.Core.pdb
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\Cinema.Core.genruntimeconfig.cache
+C:\Users\eliah\Desktop\Movie\CinemaPlus-Project\Cinema.Core\obj\Debug\net6.0\ref\Cinema.Core.dll
