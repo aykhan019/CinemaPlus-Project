@@ -33,7 +33,6 @@
 /*Place Container Start*/
 .place-container {
     width: 100%;
-    height: 85vh;
     border: 1px solid red;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.607);
@@ -235,7 +234,7 @@
 
 @media only screen and (max-width: 1600px) {
     #repertuar {
-        width: auto;
+        width: 100%;    
     }
 }
 /* Tab End */

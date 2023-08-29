@@ -24,5 +24,6 @@
 
         public const string GetSessionById = "GetSessionById/{id}";
 
+        public const string GetMovieSessions = "GetMovieSessions";
     }
 }

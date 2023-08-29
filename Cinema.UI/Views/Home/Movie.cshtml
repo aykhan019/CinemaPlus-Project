@@ -1,0 +1,245 @@
+﻿@using Cinema.UI.Helpers.ConstantHelpers;
+@using CinemaPlusMovieDetails.Models;
+@model MovieDetailsViewModel;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<link rel="stylesheet" href="~/css/today.css" />
+<link rel="stylesheet" href="~/css/movie.css" />
+
+<div class="movie-page-container">
+
+    <div class="trailer-container">
+        @if (Model != null && Model.Movie != null)
+        {
+            <iframe height="500"
+                    width="1600"
+                    className="movie-trailer"
+                    src="@Model?.Movie?.TrailerUrl"
+                    title="@Model?.Movie?.Title"
+                    frameborder="0"
+                    modestbranding
+                    controls="0"></iframe>
+        }
+    </div>
+
+    <div class="tabs" style="overflow-y: hidden;" id="page_wrapper">
+        <div class="tab_header">
+            <a href="#" id="desc">DESCRIPTION</a>
+            <a href="#" class="active" id="sessions">SESSIONS</a>
+            <a href="#" id="trailer" class="">TRAILER</a>
+        </div>
+
+        <div class="tab_body">
+            <div class="tab desc" id="description_container" style="display: none;">
+                <div class="left_banner">
+                    @if (Model != null && Model.Movie != null && @Model.Movie.PosterUrl != null)
+                    {
+                        <img src=@Model.Movie.PosterUrl height="400" style="float:left;" alt="@Model.Movie.Title">
+                    }
+                    else
+                    {
+                        <img src=@ApplicationConstants.NoPosterUrl height="400" style="float:left;" alt="No Poster">
+                    }
+                    <div class="desc_film">
+                        <p>@Model?.Movie?.Plot</p>
+                    </div>
+                </div>
+
+                <div class="right_banner">
+                    <div class="movie_details">
+                        <br>
+                        <ul class="movie_details1">
+                            <li>
+                                <span>Formats</span>
+                                <div class="detail">
+                                    @foreach (var language in Model?.Movie?.Languages)
+                                    {
+                                        <div class='movie-format'>
+                                            <span>
+                                                <b></b>
+                                                Movie Language : @language.Name
+                                            </span>
+                                            <img src=@language.FlagUrl alt="#">
+                                        </div>
+                                    }
+
+                                    @foreach (var subtitle in Model?.Movie?.Subtitles)
+                                    {
+                                        <div class='movie-format'>
+                                            <span>
+                                                <b></b>
+                                                Movie Subtitle
+                                            </span>
+                                            <img src=@subtitle.ImageUrl alt="#">
+                                        </div>
+                                    }
+                                </div>
+                            </li>
+                            <li>
+                                <span>On screens</span>
+                                <div class="detail">
+                                    @if (Model.MovieSessions != null && Model.MovieSessions.Count > 0)
+                                    {
+                                        // Find the earliest and latest SessionDates
+                                        var earliestSessionDate = Model.MovieSessions.Min(session => session.StartTime);
+                                        var latestSessionDate = Model.MovieSessions.Max(session => session.StartTime);
+
+                                        <span>@earliestSessionDate.ToString("dd.MM.yyyy") - @latestSessionDate.ToString("dd.MM.yyyy")</span>
+                                    }
+                                    else
+                                    {
+                                        <span>No sessions available</span>
+                                    }
+                                </div>
+                            </li>
+                            <li>
+                                <span>Country</span>
+                                <div class="detail">@Model?.Movie?.ProducerCountry</div>
+                            </li>
+                            <li>
+                                <span>Director</span>
+                                <div class="detail">@Model?.Movie?.Director</div>
+                            </li>
+                            <li>
+                                <span>Actors</span>
+                                <div class="detail">@Model?.Movie?.Actors</div>
+                            </li>
+                            <li>
+                                <span>Duration</span>
+                                <div class="detail">@Model?.Movie?.RunTime</div>
+                            </li>
+                            <li>
+                                <span>Genre</span>
+                                <div class="detail">@Model?.Movie?.Genre</div>
+                            </li>
+                            <li>
+                                <span>Age restrictions</span>
+                                <div class="detail">@Model?.Movie?.AgeLimit</div>
+                            </li>
+                        </ul>
+                        <div class="clr"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clr"></div>
+        </div>
+
+        <div class="single_video_tab tab sessions" style="display: block;">
+            <div class="filter_block">
+                <div class="date_filter">
+                    <a href="#"
+                       class="active"
+                       id="today-btn"
+                       data-value="@Model?.SessionDates?.ElementAt(0).ToString("dd.MM.yyyy")"
+                       date-text="Today">Today</a>
+                    <a href="#"
+                       id="tomorrow-btn"
+                       data-value="@Model?.SessionDates?.ElementAt(1).ToString("dd.MM.yyyy")"
+                       date-text="Tomorrow">Tomorrow</a>
+
+                    <select class="home_date_sessions">
+                        @if (Model != null && Model.SessionDates != null)
+                        {
+                            foreach (var sessionDate in Model.SessionDates)
+                            {
+                                var dateString = sessionDate.ToString("dd.MM.yyyy");
+                                <option value="@dateString" data-value="@dateString">
+                                    @dateString
+                                </option>
+                            }
+                        }
+                    </select>
+                    <div class="clr"></div>
+                </div>
+                <div class="cinema_filter">
+                    <select id="sessionsCinemaFilter">
+                        <option class="option" value="All Cinemas" disabled selected hidden>Cinema</option>
+                        <option class="option" value="All Cinemas">All Cinemas</option>
+                        @if (Model != null && Model.Theatres != null)
+                        {
+                            @foreach (var theatre in Model.Theatres)
+                            {
+                                <option class="option" value="@theatre.Id">@theatre.Name</option>
+                            }
+                        }
+                    </select>
+                    <div class="clr"></div>
+                </div>
+                <div>
+                    <select name="sess_lang_sorter" id="sessionsLanguageFilter">
+                        <option value="All Languages" disabled selected hidden>Language</option>
+                        <option value="All Languages">All Language</option>
+                        @if (Model != null && Model.Languages != null)
+                        {
+                            @foreach (var language in Model.Languages)
+                            {
+                                <option class="option" value="@language">@language</option>
+                            }
+                        }
+                    </select>
+                    <div class="clr"></div>
+                </div>
+                <div class="clr"></div>
+            </div>
+
+            <div id="session-upper" style="width: 100%; display: flex; align-items: center; flex-direction: column;">
+                <div class="spinner-container" id="sessions-spinner" style=" padding: 30px 0px;">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only"></span>
+                    </div>
+                </div>
+
+                <div id="sessions-current-date" style="display: none">
+                    <p></p>
+                </div>
+
+                <div class="text" id="no_sessions" style="display: none; padding: 30px 5px;">
+                    <p>Sorry, we couldn't find any session matching your criteria. Please refine your search or check back later for updates.</p>
+                </div>
+            </div>
+
+            <table class="sessions_table container" style="display: block;">
+                <thead id="table-head" style="display: none; width: 100% !important;">
+                    <tr style="width: 100% !important;">
+                        <td>MOVIE</td>
+                        <td>SESSIONS</td>
+                        <td>CINEMA</td>
+                        <td>HALL</td>
+                        <td>FORMAT</td>
+                        <td>PRICE</td>
+                        <td>BUY NOW</td>
+                    </tr>
+                </thead>
+                <tbody id="movie-details-sessions">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tab trailer" style="display: none;">
+            <div class="container" id="movie-trailer-container">
+                <center style="margin: 20px 0;"><iframe width="100%" class="yt_iframe" height="600" src="@Model.Movie.TrailerUrl" frameborder="0" allowfullscreen=""></iframe></center>
+            </div>
+            <div class="clr"></div>
+        </div>
+    </div>
+
+    <div class="tab_header" style="border-bottom: 4px solid var(--main-color); margin-top: 30px;">
+        <a href="#" class="active" style="padding: 10px 15px;">ANOTHER MOVIES</a>
+    </div>
+    <div id="another-movies">
+    </div>
+</div>
+
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/functions.js"></script>
+@* <script src="~/js/today.js"></script> *@
+<script>
+    var currentMovieId = '@Model.Movie.Id';
+    localStorage.setItem("CurrentMovieId", currentMovieId);
+
+    var anotherMovies = @Html.Raw(Json.Serialize(Model.AnotherMovies));
+    localStorage.setItem("AnotherMovies", JSON.stringify(anotherMovies));
+</script>
+<script src="~/js/movie.js"></script>       

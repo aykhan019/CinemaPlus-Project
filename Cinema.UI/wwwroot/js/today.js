@@ -341,7 +341,7 @@ async function addMoviesToView(movies) {
     }
 }
 
-async function initializeApp() {
+async function initialize() {
     try {
         ALL_MOVIES = await fetchMovies();
         showMoviesSpinner();
@@ -353,4 +353,4 @@ async function initializeApp() {
 }
 
 // Call the initializeApp function to start the application
-initializeApp();
+initialize();

@@ -33,7 +33,7 @@ namespace Cinema.Business.Concrete
             return await _languageDal.GetAsync(l => l.Id == id);
         }
 
-        public async Task<IEnumerable<Language>> GetMovieLanguages(string movieId)
+        public async Task<IEnumerable<Language>> GetMovieLanguagesAsync(string movieId)
         {
             return await _languageDal.GetListAsync(l => l.MovieId == movieId);
         }

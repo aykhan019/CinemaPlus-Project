@@ -50,9 +50,9 @@ namespace Cinema.UI.Controllers.ApiControllers
 
                         session.Movie = await _movieService.GetByIdAsync(session.MovieId);
 
-                        session.Movie.Languages = (await _languageService.GetMovieLanguages(session.Movie.Id)).ToList();
+                        session.Movie.Languages = (await _languageService.GetMovieLanguagesAsync(session.Movie.Id)).ToList();
 
-                        session.Movie.Subtitles = (await _subtitleService.GetMovieSubtitles(session.Movie.Id)).ToList();
+                        session.Movie.Subtitles = (await _subtitleService.GetMovieSubtitlesAsync(session.Movie.Id)).ToList();
                     });
 
                     return Ok(list);
@@ -72,14 +72,19 @@ namespace Cinema.UI.Controllers.ApiControllers
             try
             {
                 var session = _sessionService.GetByIdAsync(id).Result;
+
                 if (session != null)
                 {
-
                     session.Hall = await _hallService.GetByIdAsync(session.HallId);
+
                     session.Movie = await _movieService.GetByIdAsync(session.MovieId);
-                    session.Movie.Languages = (await _languageService.GetMovieLanguages(session.Movie.Id)).ToList();
-                    session.Movie.Subtitles = (await _subtitleService.GetMovieSubtitles(session.Movie.Id)).ToList();
+
+                    session.Movie.Languages = (await _languageService.GetMovieLanguagesAsync(session.Movie.Id)).ToList();
+
+                    session.Movie.Subtitles = (await _subtitleService.GetMovieSubtitlesAsync(session.Movie.Id)).ToList();
+
                     session.Hall.Seats= (_seatService.GetAllAsync().Result.Where(s=>s.SessionId==id).ToList());
+
                     return Ok(session);
                 }
                 return NoContent();
@@ -88,6 +93,39 @@ namespace Cinema.UI.Controllers.ApiControllers
             {
 
                 return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpGet(Routes.GetMovieSessions)]
+        public async Task<IActionResult> GetMovieSessions(string movieId)
+        {
+            try
+            {
+                var sessions = await _sessionService.GetMovieSessionsAsync(movieId);
+
+                if (sessions != null)
+                {
+                    var list = sessions.ToList();
+
+                    list.ForEach(async (session) =>
+                    {
+                        session.Hall = await _hallService.GetByIdAsync(session.HallId);
+
+                        session.Movie = await _movieService.GetByIdAsync(session.MovieId);
+
+                        session.Movie.Languages = (await _languageService.GetMovieLanguagesAsync(session.Movie.Id)).ToList();
+
+                        session.Movie.Subtitles = (await _subtitleService.GetMovieSubtitlesAsync(session.Movie.Id)).ToList();
+                    });
+
+                    return Ok(list);
+                }
+
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);             
             }
         }
     }

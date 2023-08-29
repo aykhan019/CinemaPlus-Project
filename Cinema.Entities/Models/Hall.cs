@@ -18,6 +18,11 @@ namespace Cinema.Entities.Models
         public string? TheatreId { get; set; }
 
         /// <summary>
+        /// Gets or sets the theatre associated with the hall.
+        /// </summary>
+        public virtual Theatre? Theatre { get; set; }
+
+        /// <summary>
         /// Gets or sets the name of the hall.
         /// </summary>
         public string? Name { get; set; }

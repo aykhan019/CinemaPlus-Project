@@ -24,11 +24,13 @@ namespace Cinema.Business.Concrete
 
             if (sessions != null && sessions.Count() > 0)
             {
-                var oldestSession = sessions.OrderByDescending(s => s.StartTime).FirstOrDefault()!;
+                var oldestSession = sessions.OrderBy(s => s.StartTime).FirstOrDefault()!;
 
                 var firstAddedSessionDate = new DateTime(2023, 8, 23);
 
-                if (oldestSession.StartTime != firstAddedSessionDate)
+                if (oldestSession.StartTime.Year == firstAddedSessionDate.Year &&
+                    oldestSession.StartTime.Month == firstAddedSessionDate.Month &&
+                    oldestSession.StartTime.Day == firstAddedSessionDate.Day)
                 {
                     int dayDifference = (DateTime.Now - firstAddedSessionDate).Days;
 
@@ -54,6 +56,11 @@ namespace Cinema.Business.Concrete
         public async Task<Session> GetByIdAsync(string id)
         {
             return await _sessionDal.GetAsync(s => s.Id == id);
+        }
+
+        public async Task<IEnumerable<Session>> GetMovieSessionsAsync(string movieId)
+        {
+            return await _sessionDal.GetListAsync(s => s.MovieId == movieId);
         }
 
         public async Task UpdateAsync(Session entity)
