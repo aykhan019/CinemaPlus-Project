@@ -1,7 +1,11 @@
 ﻿body {
+    width: 100vw;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     padding-top: 115px;
+    overflow-x: hidden;
 }
 
 header {
@@ -176,6 +180,20 @@ a {
 
 .main-body {
     display: flex;
+    width: 1600px;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1600px) {
+    .main-body {
+        width: 100%;
+    }
+
+    .footer-up {
+        width: 100%;
+    }
 }
 
 
@@ -185,12 +203,11 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
 }
 
 .footer-up {
     display: flex;
-    width: 80%;
+    width: 1600px;
     border-bottom: 2px solid white;
     padding: 10px;
 }

@@ -35,9 +35,9 @@ namespace Cinema.UI.Controllers.ApiControllers
                 {
                     movies.ForEach(async movie =>
                     {
-                        movie.Languages = (await _languageService.GetMovieLanguages(movie.Id)).ToList();
+                        movie.Languages = (await _languageService.GetMovieLanguagesAsync(movie.Id)).ToList();
 
-                        movie.Subtitles = (await _subtitleService.GetMovieSubtitles(movie.Id)).ToList();
+                        movie.Subtitles = (await _subtitleService.GetMovieSubtitlesAsync(movie.Id)).ToList();
                     });
 
                     return Ok(movies);

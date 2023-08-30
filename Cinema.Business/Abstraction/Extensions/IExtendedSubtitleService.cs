@@ -9,6 +9,6 @@ namespace Cinema.Business.Abstraction.Extensions
 {
     public interface IExtendedSubtitleService : ISubtitleService
     {
-        Task<IEnumerable<Subtitle>> GetMovieSubtitles(string movieId);
+        Task<IEnumerable<Subtitle>> GetMovieSubtitlesAsync(string movieId);
     }
 }

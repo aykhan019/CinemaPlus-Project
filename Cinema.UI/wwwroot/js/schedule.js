@@ -18,6 +18,7 @@ function setActive(link) {
     if (link != null) {
         link.classList.add("active");
 
+
         var dateValue = link.getAttribute("data-value");
 
         addSessionsToView(dateValue);
@@ -49,7 +50,6 @@ function handleSelectChange() {
         addSessionsToView(selectedOptionValue);
     }
 }
-
 
 var selectedSessionCinema = AllCinemas;
 var selectedSessionLanguage = AllLanguages;
@@ -158,7 +158,7 @@ function createSessionsRowHtml(session, maxFormatCount) {
         movie = MOVIES.find((m) => m.id === session?.movieId);
 
         const selectedLanguage = movie.languages.find(function (language) {
-            return language.name === selectedSessionLanguage;
+            return language.name === selectedSessionLanguage;   
         });
 
         if (selectedLanguage) {
@@ -368,7 +368,7 @@ function selectSeat(price, seatId) {
 }
 
 const MAX_SESSION_FORMAT_COUNT = 3;
-
+    
 function areDatesOnSameDay(date1, date2) {
     // Compare year, month, and day components
     return (

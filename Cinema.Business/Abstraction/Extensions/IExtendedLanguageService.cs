@@ -9,7 +9,7 @@ namespace Cinema.Business.Abstraction.Extensions
 {
     public interface IExtendedLanguageService : ILanguageService
     {
-        Task<IEnumerable<Language>> GetMovieLanguages(string movieId);
+        Task<IEnumerable<Language>> GetMovieLanguagesAsync(string movieId);
 
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.UI\\Cinema.UI.csproj": {}
+    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.UI\\Cinema.UI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj": {
+    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj",
         "projectName": "Cinema.Business",
-        "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj",
-        "packagesPath": "C:\\Users\\eliah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Business\\obj\\",
+        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eliah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj"
               },
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj"
               }
             }
           }
@@ -74,7 +74,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -83,21 +84,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.316\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj": {
+    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj",
         "projectName": "Cinema.Core",
-        "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj",
-        "packagesPath": "C:\\Users\\eliah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\obj\\",
+        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eliah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -150,7 +151,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -159,21 +161,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.316\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
+    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
         "projectName": "Cinema.DataAccess",
-        "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\eliah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.DataAccess\\obj\\",
+        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eliah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -187,11 +189,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj"
               },
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj"
               }
             }
           }
@@ -233,7 +235,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -242,21 +245,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.316\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj": {
+    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj",
         "projectName": "Cinema.Entities",
-        "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj",
-        "packagesPath": "C:\\Users\\eliah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\obj\\",
+        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eliah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -270,8 +273,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj"
               }
             }
           }
@@ -325,7 +328,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -334,21 +338,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.316\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.UI\\Cinema.UI.csproj": {
+    "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.UI\\Cinema.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.UI\\Cinema.UI.csproj",
+        "projectUniqueName": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.UI\\Cinema.UI.csproj",
         "projectName": "Cinema.UI",
-        "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.UI\\Cinema.UI.csproj",
-        "packagesPath": "C:\\Users\\eliah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.UI\\obj\\",
+        "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.UI\\Cinema.UI.csproj",
+        "packagesPath": "C:\\Users\\Ayxan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.UI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\eliah\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Ayxan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -362,17 +366,17 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Business\\Cinema.Business.csproj"
               },
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Core\\Cinema.Core.csproj"
               },
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.DataAccess\\Cinema.DataAccess.csproj"
               },
-              "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj": {
-                "projectPath": "C:\\Users\\eliah\\Desktop\\Movie\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj"
+              "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj": {
+                "projectPath": "C:\\Users\\Ayxan\\Source\\Repos\\CinemaPlus-Project\\Cinema.Entities\\Cinema.Entities.csproj"
               }
             }
           }
@@ -418,7 +422,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -430,7 +435,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.316\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
