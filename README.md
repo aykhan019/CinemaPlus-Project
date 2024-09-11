@@ -7,7 +7,6 @@
 - [Installation and Setup](#installation-and-setup)
 - [How to Run the Project](#how-to-run-the-project)
 - [Contributing](#contributing)
-- [Video Demo](#video-demo)
 - [License](#license)
 
 ## Project Overview
@@ -56,13 +55,6 @@ CinemaPlus is a diploma project developed as part of the Step IT Academy curricu
 
 ### Contributing
 Contributions are welcome! If you have any suggestions or improvements, feel free to submit a pull request.
-
-### Video Demo
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=T5DJ435Chzg&ab_channel=MyProjects">
-    <img src="https://img.youtube.com/vi/T5DJ435Chzg/0.jpg" alt="CinemaPlus Demo Video" width="100%"> 
-  </a> 
-</p>
 
 ## License
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more details.
